@@ -9,8 +9,6 @@ class PicturesController < ApplicationController
     @pictures = Picture.all
   end
 
-
-
   # GET /pictures/1
   # GET /pictures/1.json
   def show

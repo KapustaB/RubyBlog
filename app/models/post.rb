@@ -1,5 +1,8 @@
 class Post < ApplicationRecord
   acts_as_votable
+  include Impressionist::IsImpressionable
+  is_impressionable counter_cache: true
+
   attr_accessor :remove_image
 
   has_many :comments

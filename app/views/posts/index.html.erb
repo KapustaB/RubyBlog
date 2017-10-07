@@ -45,6 +45,7 @@
             <%end%>
           </li>
           <li><a href="#" class="icon fa-comment"></a></li>
+          <li> <%= post.impressionist_count(:filter=>:ip_address)%></li>
         </ul>
       </footer>
       </article>
@@ -94,57 +95,27 @@
       </article>
     <% end %>
 
-
+     <% @most_view_posts = @posts.order('impressions_count DESC').take(3) %>
   <!-- Posts List -->
+
   <section>
     <ul class="posts">
-      <li>
-        <article>
-          <header>
-            <h3><a href="#">Lorem ipsum fermentum ut nisl vitae</a></h3>
-            <time class="published" datetime="2015-10-20">October 20, 2015</time>
-          </header>
-          <a href="#" class="image"><img src="Future%20Imperfect%20by%20HTML5%20UP_files/pic08.jpg" alt=""></a>
-        </article>
-      </li>
-      <li>
-        <article>
-          <header>
-            <h3><a href="#">Convallis maximus nisl mattis nunc id lorem</a></h3>
-            <time class="published" datetime="2015-10-15">October 15, 2015</time>
-          </header>
-          <a href="#" class="image"><img src="Future%20Imperfect%20by%20HTML5%20UP_files/pic09.jpg" alt=""></a>
-        </article>
-      </li>
-      <li>
-        <article>
-          <header>
-            <h3><a href="#">Euismod amet placerat vivamus porttitor</a></h3>
-            <time class="published" datetime="2015-10-10">October 10, 2015</time>
-          </header>
-          <a href="#" class="image"><img src="Future%20Imperfect%20by%20HTML5%20UP_files/pic10.jpg" alt=""></a>
-        </article>
-      </li>
-      <li>
-        <article>
-          <header>
-            <h3><a href="#">Magna enim accumsan tortor cursus ultricies</a></h3>
-            <time class="published" datetime="2015-10-08">October 8, 2015</time>
-          </header>
-          <a href="#" class="image"><img src="Future%20Imperfect%20by%20HTML5%20UP_files/pic11.jpg" alt=""></a>
-        </article>
-      </li>
-      <li>
-        <article>
-          <header>
-            <h3><a href="#">Congue ullam corper lorem ipsum dolor</a></h3>
-            <time class="published" datetime="2015-10-06">October 7, 99</time>
-          </header>
-          <a href="#" class="image"><img src="Future%20Imperfect%20by%20HTML5%20UP_files/pic12.jpg" alt=""></a>
-        </article>
-      </li>
+      <% @most_view_posts.each do |most_view_post| %>
+          <li>
+            <article>
+              <header>
+                <h3><%= most_view_post.title %></h3>
+                <time class="published" datetime="2015-10-20"><%= most_view_post.pubDate.strftime("%d.%m.%Y.") %>
+                      Reads: <%= most_view_post.impressionist_count(:filter=>:ip_address) %>
+                </time>
+              </header>
+              <a href="#" class="image"><img src="Future%20Imperfect%20by%20HTML5%20UP_files/pic08.jpg" alt=""></a>
+            </article>
+          </li>
+      <%end%>
     </ul>
   </section>
+
       <script>
           function heart_like(e){
 

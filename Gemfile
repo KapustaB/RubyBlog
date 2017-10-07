@@ -52,7 +52,10 @@ gem 'commontator', '~> 4.11.1'
 gem 'carrierwave', '~> 1.0'
 gem 'mini_magick'
 
-# IP getter
+# View count analysis
+gem 'impressionist', '~> 1.6.0 '
+
+# User analysis
 gem 'ahoy_matey'
 
 # Fonts
