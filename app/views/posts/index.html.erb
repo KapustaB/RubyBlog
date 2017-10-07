@@ -1,31 +1,167 @@
-<p id="notice"><%= notice %></p>
+<style>
+  .heart_liked {
+    color: #2ebaae !important;
+  }
 
-<h1>Posts</h1>
+  .heart_liked::before {
+    color: #2ebaae !important;
+  }
 
-<table>
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>Content</th>
-      <th>Description</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+  .heart_disliked {
+    color: gray;
+  }
+</style>
+<% @posts.first(5).reverse_each do |post| %>
+      <article class="post">
+      <header>
+        <div class="title">
+          <h2><%= post.title %></h2>
+          <p><%= "Nema kategoriju" if post.categories.empty? %><% post.categories.each do |category| %></p>
+              <p><%= category.name %></p>
+            <% end %>
+        </div>
+        <div class="meta">
+          <time class="published" datetime="2017-11-01"><%= post.pubDate.strftime("%d.%m.%Y.")%></time>
+          <a href="#" class="author"><%= (post.user.first_name+" "+post.user.last_name)if post.user.present? %><img src="<%= %>" alt=""></a>
+        </div>
+      </header>
+      <a href="#" class="image featured" style="padding: 0; height: 250px; width: 700px"><%=image_tag(post.picture.coverpath.url)%></a>
+      <p> <%= post.description %></p>
 
-  <tbody>
-    <% @posts.each do |post| %>
-      <tr>
-        <td><%= post.title %></td>
-        <td><%= post.content %></td>
-        <td><%= post.description %></td>
-        <td><%= link_to 'Show', post %></td>
-        <td><%= link_to 'Edit', edit_post_path(post) %></td>
-        <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
+      <footer>
+        <ul class="actions">
+          <li><%= link_to "Continue Reading", post_path(post), class:'button big' %></li>
+        </ul>
+        <ul class="stats">
+          <li>  <% if user_signed_in? and (current_user != post.user) %>
+                    <% if current_user.liked? post %>
+                       <%= link_to "Dislike", unlike_post_path(post), method: :put , class: 'icon fa-heart heart_liked', id: "Post#{post.id}" , :remote => true, onclick: "heart_like(#{post.id})"%>
+                    <% else %>
+                       <%= link_to "Like", like_post_path(post), method: :put , class: 'icon fa-heart', id: "Post#{post.id}" , :remote => true, onclick: "heart_like(#{post.id})"%>
+                    <%end%>
+                <%=  post.get_likes.size %>
+            <% else %>
+                <a href="#" class="icon fa-heart"></a><%=  post.get_likes.size %>
+            <%end%>
+          </li>
+          <li><a href="#" class="icon fa-comment"></a></li>
+        </ul>
+      </footer>
+      </article>
+  <% end %>
+
+
+  <!-- Pagination -->
+  <ul class="actions pagination">
+    <li><a href="" class="disabled button big previous">Previous Page</a></li>
+    <li><a href="#" class="button big next">Next Page</a></li>
+  </ul>
+
+</div>
+
+<!-- Sidebar -->
+<section id="sidebar">
+
+  <!-- Intro -->
+  <section id="intro">
+    <a href="#" class="logo"><img src="Future%20Imperfect%20by%20HTML5%20UP_files/logo.jpg" alt=""></a>
+    <header>
+      <h2>Future Imperfect</h2>
+      <p>Another fine responsive site template by <a href="http://html5up.net/">HTML5 UP</a></p>
+    </header>
+  </section>
+
+  <!-- Mini Posts -->
+  <section>
+    <div class="mini-posts">
+
+      <% @posts.order(cached_votes_up: :desc).first(3).each do |post| %>
+      <!-- Mini Post -->
+      <article class="mini-post">
+        <header>
+          <h3><%= post.title %></h3>
+          <div class="row">
+            <div class="col-md-6">
+            <time class="published" datetime="2015-10-20"><%= post.pubDate.strftime("%d.%m.%Y.") %></time>
+          </div>
+            <div class="col-md-6 pull-right">
+            <p class="title"> Likes <%= post.get_likes.size %></p>
+            </div>
+            </div>
+          <a href="#" class="author"><img src="Future%20Imperfect%20by%20HTML5%20UP_files/avatar.jpg" alt=""></a>
+        </header>
+        <a href="#" class="image"><%=image_tag(post.picture.coverpath.url)%></a>
+      </article>
     <% end %>
-  </tbody>
-</table>
 
-<br>
 
-<%= link_to 'New Post', new_post_path %>
+  <!-- Posts List -->
+  <section>
+    <ul class="posts">
+      <li>
+        <article>
+          <header>
+            <h3><a href="#">Lorem ipsum fermentum ut nisl vitae</a></h3>
+            <time class="published" datetime="2015-10-20">October 20, 2015</time>
+          </header>
+          <a href="#" class="image"><img src="Future%20Imperfect%20by%20HTML5%20UP_files/pic08.jpg" alt=""></a>
+        </article>
+      </li>
+      <li>
+        <article>
+          <header>
+            <h3><a href="#">Convallis maximus nisl mattis nunc id lorem</a></h3>
+            <time class="published" datetime="2015-10-15">October 15, 2015</time>
+          </header>
+          <a href="#" class="image"><img src="Future%20Imperfect%20by%20HTML5%20UP_files/pic09.jpg" alt=""></a>
+        </article>
+      </li>
+      <li>
+        <article>
+          <header>
+            <h3><a href="#">Euismod amet placerat vivamus porttitor</a></h3>
+            <time class="published" datetime="2015-10-10">October 10, 2015</time>
+          </header>
+          <a href="#" class="image"><img src="Future%20Imperfect%20by%20HTML5%20UP_files/pic10.jpg" alt=""></a>
+        </article>
+      </li>
+      <li>
+        <article>
+          <header>
+            <h3><a href="#">Magna enim accumsan tortor cursus ultricies</a></h3>
+            <time class="published" datetime="2015-10-08">October 8, 2015</time>
+          </header>
+          <a href="#" class="image"><img src="Future%20Imperfect%20by%20HTML5%20UP_files/pic11.jpg" alt=""></a>
+        </article>
+      </li>
+      <li>
+        <article>
+          <header>
+            <h3><a href="#">Congue ullam corper lorem ipsum dolor</a></h3>
+            <time class="published" datetime="2015-10-06">October 7, 99</time>
+          </header>
+          <a href="#" class="image"><img src="Future%20Imperfect%20by%20HTML5%20UP_files/pic12.jpg" alt=""></a>
+        </article>
+      </li>
+    </ul>
+  </section>
+      <script>
+          function heart_like(e){
+
+              var like = document.getElementById("Post"+e);
+
+              if(like.classList.contains("heart_liked")) {
+                  like.classList.remove("heart_liked");
+                  like.setAttribute('href',"/posts/" + e + "/like");
+                  like.innerHTML = "Like";
+              }else{
+                  like.classList.add("heart_liked");
+                  like.setAttribute('href',"/posts/" + e + "/unlike");
+                  like.innerHTML = "Dislike";
+              }
+          }
+
+
+      </script></div></section>
+</section>
+<%= render partial: 'footer' %>

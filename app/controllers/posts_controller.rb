@@ -1,5 +1,6 @@
 class PostsController < ApplicationController
-  before_action :set_post, only: [:show, :edit, :update, :destroy]
+  before_action :set_post, only: [:show, :edit, :update, :destroy, :upvote, :downvote]
+
 
   # GET /posts
   # GET /posts.json
@@ -10,6 +11,7 @@ class PostsController < ApplicationController
   # GET /posts/1
   # GET /posts/1.json
   def show
+    @post = Post.find(params[:id])
   end
 
   # GET /posts/new
@@ -19,19 +21,26 @@ class PostsController < ApplicationController
 
   # GET /posts/1/edit
   def edit
+    (redirect_to :back and flash[:error] = 'Neces razbojnice') unless @post.user == current_user
   end
 
   # POST /posts
   # POST /posts.json
   def create
     @post = Post.new(post_params)
+    picture = Picture.create(coverpath: params[:post][:picture][:coverpath])
+    @post.pubDate = DateTime.now.to_date
+    @post.user = current_user
+    @post.picture = picture
 
     respond_to do |format|
-      if @post.save
+      if @post.save!
+        flash[:notice] = "Kreiran je novi post!"
         format.html { redirect_to @post, notice: 'Post was successfully created.' }
         format.json { render :show, status: :created, location: @post }
       else
-        format.html { render :new }
+        flash[:notice] = "Post nije kreiran!"
+        format.html { render :new , notice: 'Post cannot be created' }
         format.json { render json: @post.errors, status: :unprocessable_entity }
       end
     end
@@ -40,6 +49,7 @@ class PostsController < ApplicationController
   # PATCH/PUT /posts/1
   # PATCH/PUT /posts/1.json
   def update
+
     respond_to do |format|
       if @post.update(post_params)
         format.html { redirect_to @post, notice: 'Post was successfully updated.' }
@@ -61,6 +71,16 @@ class PostsController < ApplicationController
     end
   end
 
+  def upvote
+    @post = Post.find(params[:id])
+    @post.liked_by current_user
+  end
+
+  def downvote
+    @post = Post.find(params[:id])
+    @post.downvote_from current_user
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_post
@@ -69,6 +89,7 @@ class PostsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def post_params
-      params.require(:post).permit(:title, :content, :description)
+      params.require(:post).permit(:title, :content, :description, :pubDate, {:category_ids => []} )
     end
+
 end

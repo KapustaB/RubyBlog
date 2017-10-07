@@ -32,15 +32,30 @@ gem 'jbuilder', '~> 2.5'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+
+# baza // postgresql
 gem 'pg'
+
+# auth
 gem 'devise'
+
+gem 'simple_form'
 gem 'bootstrap-sass'
 gem 'autoprefixer-rails'
 gem 'bcrypt'
 gem 'therubyracer'
 gem 'jquery-rails'
+gem 'acts_as_votable', '~> 0.10.0'
+gem 'commontator', '~> 4.11.1'
 
+# Za upload slike + resize
+gem 'carrierwave', '~> 1.0'
+gem 'mini_magick'
 
+# IP getter
+gem 'ahoy_matey'
+
+# Fonts
 gem 'font-awesome-sass'
 
 group :development, :test do
@@ -59,6 +74,7 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+  gem 'pry-rails'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

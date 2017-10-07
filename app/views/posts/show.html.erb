@@ -1,19 +1,116 @@
-<p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Title:</strong>
-  <%= @post.title %>
-</p>
 
-<p>
-  <strong>Content:</strong>
-  <%= @post.content %>
-</p>
+<!-- Wrapper -->
+<div id="wrapper">
 
-<p>
-  <strong>Description:</strong>
-  <%= @post.description %>
-</p>
 
-<%= link_to 'Edit', edit_post_path(@post) %> |
-<%= link_to 'Back', posts_path %>
+  <!-- Menu -->
+  <section id="menu">
+
+    <!-- Search -->
+    <section>
+      <form class="search" method="get" action="#">
+        <input type="text" name="query" placeholder="Search" />
+      </form>
+    </section>
+
+    <!-- Links -->
+    <section>
+      <ul class="links">
+        <li>
+          <a href="#">
+            <h3>Lorem ipsum</h3>
+            <p>Feugiat tempus veroeros dolor</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <h3>Dolor sit amet</h3>
+            <p>Sed vitae justo condimentum</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <h3>Feugiat veroeros</h3>
+            <p>Phasellus sed ultricies mi congue</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <h3>Etiam sed consequat</h3>
+            <p>Porta lectus amet ultricies</p>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Actions -->
+    <section>
+      <ul class="actions vertical">
+        <li><a href="#" class="button big fit">Log In</a></li>
+      </ul>
+    </section>
+
+  </section>
+
+  <!-- Main -->
+  <div id="main">
+
+    <!-- Post -->
+    <article class="post">
+      <header>
+        <div class="title">
+          <h2><%= @post.title %></h2>
+
+          <% @post.categories.each do |category| %>
+              <p>
+                <%= category.name %>
+                </p>
+            <% end %>
+        </div>
+        <div class="meta">
+          <time class="published" datetime="2015-11-01">November 1, 2015</time>
+          <a href="#" class="author"><span class="name">Jane Doe</span><img src="images/avatar.jpg" alt="" /></a>
+        </div>
+      </header>
+      <span class="image featured"><%= image_tag(@post.picture.coverpath.thumb.url) %></span>
+      <p> <%= %> </p>
+      <p> <%= @post.content %></p>
+      <footer>
+        <ul class="stats">
+          <li>  <% if user_signed_in? %>
+                <% if (current_user.liked? @post) %>
+                    <%= link_to "Dislike", unlike_post_path(@post), method: :put , class: 'icon fa-heart', :remote => true%>
+                <% else %>
+                    <%= link_to "Like", like_post_path(@post), method: :put , class: 'icon fa-heart', :remote => true%>
+                <%end%>
+                <%= @post.get_likes.size %>
+
+            <% else %>
+                <a href="#" class="icon fa-heart"></a><%= @post.get_likes.size %>
+            <%end%>
+          </li>
+          <li><a href="#" class="icon fa-comment">128</a></li>
+        </ul>
+      </footer>
+    </article>
+
+  </div>
+
+  <!-- Footer -->
+  <section id="footer">
+    <ul class="icons">
+      <li><a href="#" class="fa-twitter"><span class="label">Twitter</span></a></li>
+      <li><a href="#" class="fa-facebook"><span class="label">Facebook</span></a></li>
+      <li><a href="#" class="fa-instagram"><span class="label">Instagram</span></a></li>
+      <li><a href="#" class="fa-rss"><span class="label">RSS</span></a></li>
+      <li><a href="#" class="fa-envelope"><span class="label">Email</span></a></li>
+    </ul>
+    <p class="copyright">&copy; Untitled. Design: <a href="http://html5up.net">HTML5 UP</a>. Images: <a href="http://unsplash.com">Unsplash</a>.</p>
+  </section>
+
+</div>
+
+<%= (link_to 'Edit', edit_post_path(@post)) if @post.user == current_user and user_signed_in? %>
+
+  <%= link_to 'Back', posts_path %>

@@ -11,6 +11,8 @@
 // about supported directives.
 //
 //= require jquery
+//= require ahoy
+//= require jquery
 //= require jquery_ujs
 //= require skel.min.js
 //= require_tree .
