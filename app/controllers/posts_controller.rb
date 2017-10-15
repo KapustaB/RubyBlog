@@ -30,9 +30,10 @@ class PostsController < ApplicationController
   def create
     @post = Post.new(post_params)
     picture = Picture.create(coverpath: params[:post][:picture][:coverpath])
+    @post.picture = picture
     @post.pubDate = DateTime.now.to_date
     @post.user = current_user
-    @post.picture = picture
+
 
     respond_to do |format|
       if @post.save!

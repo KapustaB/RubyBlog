@@ -11,9 +11,11 @@
   </thead>
 
   <tbody>
-    <% @comments.each do |comment| %>
+    <% @post.comments.each do |comment| %>
       <tr>
         <td><%= comment.content %></td>
+        <p class="text-muted">Added by <strong><%= comment.author %></strong> on
+          <%= l(comment.created_at, format: '%B, %d %Y %H:%M:%S') %></p>
         <td><%= link_to 'Show', comment %></td>
         <td><%= link_to 'Edit', edit_comment_path(comment) %></td>
         <td><%= link_to 'Destroy', comment, method: :delete, data: { confirm: 'Are you sure?' } %></td>

@@ -109,9 +109,10 @@
     </ul>
     <p class="copyright">&copy; Untitled. Design: <a href="http://html5up.net">HTML5 UP</a>. Images: <a href="http://unsplash.com">Unsplash</a>.</p>
   </section>
-
 </div>
 
 <%= (link_to 'Edit', edit_post_path(@post)) if @post.user == current_user and user_signed_in? %>
 
-  <%= link_to 'Back', posts_path %>
+<%= render 'comments/comments', :post => @post %>
+
+<%= link_to 'Back', posts_path %>

@@ -3,7 +3,9 @@ Rails.application.routes.draw do
   resources :pictures
   resources :authors
   resources :comments
+
   resources :posts do
+    resources :comments
     member do
       put "like" => "posts#upvote"
       put "unlike" => "posts#downvote"
