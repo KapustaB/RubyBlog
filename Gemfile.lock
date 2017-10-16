@@ -101,15 +101,31 @@ GEM
       railties (>= 4.1.0, < 5.2)
       responders
       warden (~> 1.2.3)
+    elasticsearch (5.0.4)
+      elasticsearch-api (= 5.0.4)
+      elasticsearch-transport (= 5.0.4)
+    elasticsearch-api (5.0.4)
+      multi_json
+    elasticsearch-model (5.0.1)
+      activesupport (> 3)
+      elasticsearch (~> 5)
+      hashie
+    elasticsearch-rails (5.0.1)
+    elasticsearch-transport (5.0.4)
+      faraday
+      multi_json
     errbase (0.0.3)
     erubi (1.6.1)
     execjs (2.7.0)
+    faraday (0.13.1)
+      multipart-post (>= 1.2, < 3)
     ffi (1.9.18)
     font-awesome-sass (4.7.0)
       sass (>= 3.2)
     geocoder (1.4.4)
     globalid (0.4.0)
       activesupport (>= 4.2.0)
+    hashie (3.5.6)
     i18n (0.8.6)
     impressionist (1.6.0)
       nokogiri (~> 1)
@@ -138,6 +154,7 @@ GEM
     mini_portile2 (2.3.0)
     minitest (5.10.3)
     multi_json (1.12.2)
+    multipart-post (2.0.0)
     nio4r (2.1.0)
     nokogiri (1.8.1)
       mini_portile2 (~> 2.3.0)
@@ -268,6 +285,8 @@ DEPENDENCIES
   coffee-rails (~> 4.2)
   commontator (~> 4.11.1)
   devise
+  elasticsearch-model
+  elasticsearch-rails
   font-awesome-sass
   impressionist (~> 1.6.0)
   jbuilder (~> 2.5)
