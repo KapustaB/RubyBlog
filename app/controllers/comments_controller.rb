@@ -21,6 +21,7 @@ class CommentsController < ApplicationController
 
   # GET /comments/1/edit
   def edit
+    (redirect_to :back and flash[:error] = 'Neces razbojnice') unless @comment.user == current_user
   end
 
   # POST /comments
@@ -58,7 +59,7 @@ class CommentsController < ApplicationController
   def destroy
     @comment.destroy
     respond_to do |format|
-      format.html { redirect_to comments_url, notice: 'Comment was successfully destroyed.' }
+      format.html { redirect_to @post, notice: 'Comment was successfully deleted.' }
       format.json { head :no_content }
     end
   end

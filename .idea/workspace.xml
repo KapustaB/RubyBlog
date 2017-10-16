@@ -2,22 +2,464 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="554cf3bc-fea2-47f8-8406-4c1e9a2b2271" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/controllers/authors_controller.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/authors/_author.json.jbuilder" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/authors/_form.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/authors/edit.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/authors/index.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/authors/index.json.jbuilder" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/authors/new.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/authors/show.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/authors/show.json.jbuilder" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/29a1ff5d-12bd-4c79-9633-df713ca7ffb6/_metadata_/metadata" afterPath="$PROJECT_DIR$/.idea/dataSources/29a1ff5d-12bd-4c79-9633-df713ca7ffb6/_metadata_/metadata" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/29a1ff5d-12bd-4c79-9633-df713ca7ffb6/_metadata_/metadata.keystream" afterPath="$PROJECT_DIR$/.idea/dataSources/29a1ff5d-12bd-4c79-9633-df713ca7ffb6/_metadata_/metadata.keystream" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/29a1ff5d-12bd-4c79-9633-df713ca7ffb6/_metadata_/metadata.keystream.len" afterPath="$PROJECT_DIR$/.idea/dataSources/29a1ff5d-12bd-4c79-9633-df713ca7ffb6/_metadata_/metadata.keystream.len" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/29a1ff5d-12bd-4c79-9633-df713ca7ffb6/_metadata_/metadata.len" afterPath="$PROJECT_DIR$/.idea/dataSources/29a1ff5d-12bd-4c79-9633-df713ca7ffb6/_metadata_/metadata.len" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/29a1ff5d-12bd-4c79-9633-df713ca7ffb6/_metadata_/metadata.values.at" afterPath="$PROJECT_DIR$/.idea/dataSources/29a1ff5d-12bd-4c79-9633-df713ca7ffb6/_metadata_/metadata.values.at" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/29a1ff5d-12bd-4c79-9633-df713ca7ffb6/_metadata_/metadata_i" afterPath="$PROJECT_DIR$/.idea/dataSources/29a1ff5d-12bd-4c79-9633-df713ca7ffb6/_metadata_/metadata_i" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/29a1ff5d-12bd-4c79-9633-df713ca7ffb6/_metadata_/metadata_i.len" afterPath="$PROJECT_DIR$/.idea/dataSources/29a1ff5d-12bd-4c79-9633-df713ca7ffb6/_metadata_/metadata_i.len" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/8c36b0f0-f131-4c29-b5c0-9436ff8babf8/_metadata_/metadata" afterPath="$PROJECT_DIR$/.idea/dataSources/8c36b0f0-f131-4c29-b5c0-9436ff8babf8/_metadata_/metadata" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/8c36b0f0-f131-4c29-b5c0-9436ff8babf8/_metadata_/metadata.keystream" afterPath="$PROJECT_DIR$/.idea/dataSources/8c36b0f0-f131-4c29-b5c0-9436ff8babf8/_metadata_/metadata.keystream" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/8c36b0f0-f131-4c29-b5c0-9436ff8babf8/_metadata_/metadata.keystream.len" afterPath="$PROJECT_DIR$/.idea/dataSources/8c36b0f0-f131-4c29-b5c0-9436ff8babf8/_metadata_/metadata.keystream.len" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/8c36b0f0-f131-4c29-b5c0-9436ff8babf8/_metadata_/metadata.len" afterPath="$PROJECT_DIR$/.idea/dataSources/8c36b0f0-f131-4c29-b5c0-9436ff8babf8/_metadata_/metadata.len" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/8c36b0f0-f131-4c29-b5c0-9436ff8babf8/_metadata_/metadata.values.at" afterPath="$PROJECT_DIR$/.idea/dataSources/8c36b0f0-f131-4c29-b5c0-9436ff8babf8/_metadata_/metadata.values.at" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/8c36b0f0-f131-4c29-b5c0-9436ff8babf8/_metadata_/metadata_i" afterPath="$PROJECT_DIR$/.idea/dataSources/8c36b0f0-f131-4c29-b5c0-9436ff8babf8/_metadata_/metadata_i" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/8c36b0f0-f131-4c29-b5c0-9436ff8babf8/_metadata_/metadata_i.len" afterPath="$PROJECT_DIR$/.idea/dataSources/8c36b0f0-f131-4c29-b5c0-9436ff8babf8/_metadata_/metadata_i.len" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/fonts/FontAwesome.otf" afterPath="$PROJECT_DIR$/app/assets/fonts/FontAwesome.otf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/fonts/fontawesome-webfont.eot" afterPath="$PROJECT_DIR$/app/assets/fonts/fontawesome-webfont.eot" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/fonts/fontawesome-webfont.ttf" afterPath="$PROJECT_DIR$/app/assets/fonts/fontawesome-webfont.ttf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/fonts/fontawesome-webfont.woff" afterPath="$PROJECT_DIR$/app/assets/fonts/fontawesome-webfont.woff" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/fonts/fontawesome-webfont.woff2" afterPath="$PROJECT_DIR$/app/assets/fonts/fontawesome-webfont.woff2" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/images/.keep" afterPath="$PROJECT_DIR$/app/assets/images/.keep" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/images/avatar.jpg" afterPath="$PROJECT_DIR$/app/assets/images/avatar.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/images/fallback/pic04.jpg" afterPath="$PROJECT_DIR$/app/assets/images/fallback/pic04.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/images/pic04.jpg" afterPath="$PROJECT_DIR$/app/assets/images/pic04.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/channels/.keep" afterPath="$PROJECT_DIR$/app/assets/javascripts/channels/.keep" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/concerns/.keep" afterPath="$PROJECT_DIR$/app/controllers/concerns/.keep" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/concerns/.keep" afterPath="$PROJECT_DIR$/app/models/concerns/.keep" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/.keep" afterPath="$PROJECT_DIR$/lib/assets/.keep" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/tasks/.keep" afterPath="$PROJECT_DIR$/lib/tasks/.keep" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/.keep" afterPath="$PROJECT_DIR$/log/.keep" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/apple-touch-icon-precomposed.png" afterPath="$PROJECT_DIR$/public/apple-touch-icon-precomposed.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/apple-touch-icon.png" afterPath="$PROJECT_DIR$/public/apple-touch-icon.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/FontAwesome-ecd72f31910a8ee2726fd17bd459be26f230779f3f3ed5f69ebf829e4b12e768.otf" afterPath="$PROJECT_DIR$/public/assets/FontAwesome-ecd72f31910a8ee2726fd17bd459be26f230779f3f3ed5f69ebf829e4b12e768.otf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/FontAwesome-ecd72f31910a8ee2726fd17bd459be26f230779f3f3ed5f69ebf829e4b12e768.otf.gz" afterPath="$PROJECT_DIR$/public/assets/FontAwesome-ecd72f31910a8ee2726fd17bd459be26f230779f3f3ed5f69ebf829e4b12e768.otf.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/application-18487b7ec54cb58905de915bcc19a60da672e6a1cfe3f22d465727ed04d36326.css.gz" afterPath="$PROJECT_DIR$/public/assets/application-18487b7ec54cb58905de915bcc19a60da672e6a1cfe3f22d465727ed04d36326.css.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/application-60b3c1ceca2d835847b3753d1ea4ea5eea088a3f8cc9b37cb59de87e99cfa3d5.js.gz" afterPath="$PROJECT_DIR$/public/assets/application-60b3c1ceca2d835847b3753d1ea4ea5eea088a3f8cc9b37cb59de87e99cfa3d5.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/font-awesome/fontawesome-webfont-2adefcbc041e7d18fcf2d417879dc5a09997aa64d675b7a3c4b6ce33da13f3fe.woff2" afterPath="$PROJECT_DIR$/public/assets/font-awesome/fontawesome-webfont-2adefcbc041e7d18fcf2d417879dc5a09997aa64d675b7a3c4b6ce33da13f3fe.woff2" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/font-awesome/fontawesome-webfont-7bfcab6db99d5cfbf1705ca0536ddc78585432cc5fa41bbd7ad0f009033b2979.eot" afterPath="$PROJECT_DIR$/public/assets/font-awesome/fontawesome-webfont-7bfcab6db99d5cfbf1705ca0536ddc78585432cc5fa41bbd7ad0f009033b2979.eot" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/font-awesome/fontawesome-webfont-7bfcab6db99d5cfbf1705ca0536ddc78585432cc5fa41bbd7ad0f009033b2979.eot.gz" afterPath="$PROJECT_DIR$/public/assets/font-awesome/fontawesome-webfont-7bfcab6db99d5cfbf1705ca0536ddc78585432cc5fa41bbd7ad0f009033b2979.eot.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/font-awesome/fontawesome-webfont-aa58f33f239a0fb02f5c7a6c45c043d7a9ac9a093335806694ecd6d4edc0d6a8.ttf" afterPath="$PROJECT_DIR$/public/assets/font-awesome/fontawesome-webfont-aa58f33f239a0fb02f5c7a6c45c043d7a9ac9a093335806694ecd6d4edc0d6a8.ttf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/font-awesome/fontawesome-webfont-aa58f33f239a0fb02f5c7a6c45c043d7a9ac9a093335806694ecd6d4edc0d6a8.ttf.gz" afterPath="$PROJECT_DIR$/public/assets/font-awesome/fontawesome-webfont-aa58f33f239a0fb02f5c7a6c45c043d7a9ac9a093335806694ecd6d4edc0d6a8.ttf.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/font-awesome/fontawesome-webfont-ad6157926c1622ba4e1d03d478f1541368524bfc46f51e42fe0d945f7ef323e4.svg.gz" afterPath="$PROJECT_DIR$/public/assets/font-awesome/fontawesome-webfont-ad6157926c1622ba4e1d03d478f1541368524bfc46f51e42fe0d945f7ef323e4.svg.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/font-awesome/fontawesome-webfont-ba0c59deb5450f5cb41b3f93609ee2d0d995415877ddfa223e8a8a7533474f07.woff" afterPath="$PROJECT_DIR$/public/assets/font-awesome/fontawesome-webfont-ba0c59deb5450f5cb41b3f93609ee2d0d995415877ddfa223e8a8a7533474f07.woff" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/fontawesome-webfont-50bbe9192697e791e2ee4ef73917aeb1b03e727dff08a1fc8d74f00e4aa812e1.eot" afterPath="$PROJECT_DIR$/public/assets/fontawesome-webfont-50bbe9192697e791e2ee4ef73917aeb1b03e727dff08a1fc8d74f00e4aa812e1.eot" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/fontawesome-webfont-50bbe9192697e791e2ee4ef73917aeb1b03e727dff08a1fc8d74f00e4aa812e1.eot.gz" afterPath="$PROJECT_DIR$/public/assets/fontawesome-webfont-50bbe9192697e791e2ee4ef73917aeb1b03e727dff08a1fc8d74f00e4aa812e1.eot.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/fontawesome-webfont-7dacf83f51179de8d7980a513e67ab3a08f2c6272bb5946df8fd77c0d1763b73.woff2" afterPath="$PROJECT_DIR$/public/assets/fontawesome-webfont-7dacf83f51179de8d7980a513e67ab3a08f2c6272bb5946df8fd77c0d1763b73.woff2" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/fontawesome-webfont-8e3586389bb4cd01b3f85bb3b622739bde6627f28bba63a020c223ca9cf1b9ae.svg.gz" afterPath="$PROJECT_DIR$/public/assets/fontawesome-webfont-8e3586389bb4cd01b3f85bb3b622739bde6627f28bba63a020c223ca9cf1b9ae.svg.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/fontawesome-webfont-adbc4f95eb6d7f2738959cf0ecbc374672fce47e856050a8e9791f457623ac2c.woff" afterPath="$PROJECT_DIR$/public/assets/fontawesome-webfont-adbc4f95eb6d7f2738959cf0ecbc374672fce47e856050a8e9791f457623ac2c.woff" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/fontawesome-webfont-ae19e2e4c04f2b04bf030684c4c1db8faf5c8fe3ee03d1e0c409046608b38912.ttf" afterPath="$PROJECT_DIR$/public/assets/fontawesome-webfont-ae19e2e4c04f2b04bf030684c4c1db8faf5c8fe3ee03d1e0c409046608b38912.ttf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/fontawesome-webfont-ae19e2e4c04f2b04bf030684c4c1db8faf5c8fe3ee03d1e0c409046608b38912.ttf.gz" afterPath="$PROJECT_DIR$/public/assets/fontawesome-webfont-ae19e2e4c04f2b04bf030684c4c1db8faf5c8fe3ee03d1e0c409046608b38912.ttf.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/favicon.ico" afterPath="$PROJECT_DIR$/public/favicon.ico" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/picture/coverpath/1/ruby1.jpg" afterPath="$PROJECT_DIR$/public/uploads/picture/coverpath/1/ruby1.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/picture/coverpath/1/thumb_ruby1.jpg" afterPath="$PROJECT_DIR$/public/uploads/picture/coverpath/1/thumb_ruby1.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/picture/coverpath/10/pic05.jpg" afterPath="$PROJECT_DIR$/public/uploads/picture/coverpath/10/pic05.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/picture/coverpath/10/thumb_pic05.jpg" afterPath="$PROJECT_DIR$/public/uploads/picture/coverpath/10/thumb_pic05.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/picture/coverpath/11/pic06.jpg" afterPath="$PROJECT_DIR$/public/uploads/picture/coverpath/11/pic06.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/picture/coverpath/11/thumb_pic06.jpg" afterPath="$PROJECT_DIR$/public/uploads/picture/coverpath/11/thumb_pic06.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/picture/coverpath/12/pic06.jpg" afterPath="$PROJECT_DIR$/public/uploads/picture/coverpath/12/pic06.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/picture/coverpath/12/thumb_pic06.jpg" afterPath="$PROJECT_DIR$/public/uploads/picture/coverpath/12/thumb_pic06.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/picture/coverpath/13/pic07.jpg" afterPath="$PROJECT_DIR$/public/uploads/picture/coverpath/13/pic07.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/picture/coverpath/13/thumb_pic07.jpg" afterPath="$PROJECT_DIR$/public/uploads/picture/coverpath/13/thumb_pic07.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/picture/coverpath/14/logo.jpg" afterPath="$PROJECT_DIR$/public/uploads/picture/coverpath/14/logo.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/picture/coverpath/14/thumb_logo.jpg" afterPath="$PROJECT_DIR$/public/uploads/picture/coverpath/14/thumb_logo.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/picture/coverpath/15/logo.jpg" afterPath="$PROJECT_DIR$/public/uploads/picture/coverpath/15/logo.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/picture/coverpath/15/thumb_logo.jpg" afterPath="$PROJECT_DIR$/public/uploads/picture/coverpath/15/thumb_logo.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/picture/coverpath/16/pic07.jpg" afterPath="$PROJECT_DIR$/public/uploads/picture/coverpath/16/pic07.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/picture/coverpath/16/thumb_pic07.jpg" afterPath="$PROJECT_DIR$/public/uploads/picture/coverpath/16/thumb_pic07.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/picture/coverpath/17/pic01.jpg" afterPath="$PROJECT_DIR$/public/uploads/picture/coverpath/17/pic01.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/picture/coverpath/17/thumb_pic01.jpg" afterPath="$PROJECT_DIR$/public/uploads/picture/coverpath/17/thumb_pic01.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/picture/coverpath/18/pic07.jpg" afterPath="$PROJECT_DIR$/public/uploads/picture/coverpath/18/pic07.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/picture/coverpath/18/thumb_pic07.jpg" afterPath="$PROJECT_DIR$/public/uploads/picture/coverpath/18/thumb_pic07.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/picture/coverpath/19/pic01.jpg" afterPath="$PROJECT_DIR$/public/uploads/picture/coverpath/19/pic01.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/picture/coverpath/19/thumb_pic01.jpg" afterPath="$PROJECT_DIR$/public/uploads/picture/coverpath/19/thumb_pic01.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/picture/coverpath/2/ruby1.jpg" afterPath="$PROJECT_DIR$/public/uploads/picture/coverpath/2/ruby1.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/picture/coverpath/2/thumb_ruby1.jpg" afterPath="$PROJECT_DIR$/public/uploads/picture/coverpath/2/thumb_ruby1.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/picture/coverpath/20/pic04.jpg" afterPath="$PROJECT_DIR$/public/uploads/picture/coverpath/20/pic04.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/picture/coverpath/20/thumb_pic04.jpg" afterPath="$PROJECT_DIR$/public/uploads/picture/coverpath/20/thumb_pic04.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/picture/coverpath/21/pic03.jpg" afterPath="$PROJECT_DIR$/public/uploads/picture/coverpath/21/pic03.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/picture/coverpath/21/thumb_pic03.jpg" afterPath="$PROJECT_DIR$/public/uploads/picture/coverpath/21/thumb_pic03.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/picture/coverpath/22/pic01.jpg" afterPath="$PROJECT_DIR$/public/uploads/picture/coverpath/22/pic01.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/picture/coverpath/22/thumb_pic01.jpg" afterPath="$PROJECT_DIR$/public/uploads/picture/coverpath/22/thumb_pic01.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/picture/coverpath/23/pic01.jpg" afterPath="$PROJECT_DIR$/public/uploads/picture/coverpath/23/pic01.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/picture/coverpath/23/thumb_pic01.jpg" afterPath="$PROJECT_DIR$/public/uploads/picture/coverpath/23/thumb_pic01.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/picture/coverpath/24/pic07.jpg" afterPath="$PROJECT_DIR$/public/uploads/picture/coverpath/24/pic07.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/picture/coverpath/24/thumb_pic07.jpg" afterPath="$PROJECT_DIR$/public/uploads/picture/coverpath/24/thumb_pic07.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/picture/coverpath/25/pic06.jpg" afterPath="$PROJECT_DIR$/public/uploads/picture/coverpath/25/pic06.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/picture/coverpath/25/thumb_pic06.jpg" afterPath="$PROJECT_DIR$/public/uploads/picture/coverpath/25/thumb_pic06.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/picture/coverpath/26/big_pic03.jpg" afterPath="$PROJECT_DIR$/public/uploads/picture/coverpath/26/big_pic03.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/picture/coverpath/26/pic03.jpg" afterPath="$PROJECT_DIR$/public/uploads/picture/coverpath/26/pic03.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/picture/coverpath/26/small_pic03.jpg" afterPath="$PROJECT_DIR$/public/uploads/picture/coverpath/26/small_pic03.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/picture/coverpath/26/thumb_pic03.jpg" afterPath="$PROJECT_DIR$/public/uploads/picture/coverpath/26/thumb_pic03.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/picture/coverpath/27/big_pic07.jpg" afterPath="$PROJECT_DIR$/public/uploads/picture/coverpath/27/big_pic07.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/picture/coverpath/27/pic07.jpg" afterPath="$PROJECT_DIR$/public/uploads/picture/coverpath/27/pic07.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/picture/coverpath/27/small_pic07.jpg" afterPath="$PROJECT_DIR$/public/uploads/picture/coverpath/27/small_pic07.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/picture/coverpath/27/thumb_pic07.jpg" afterPath="$PROJECT_DIR$/public/uploads/picture/coverpath/27/thumb_pic07.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/picture/coverpath/3/ruby2.jpeg" afterPath="$PROJECT_DIR$/public/uploads/picture/coverpath/3/ruby2.jpeg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/picture/coverpath/3/thumb_ruby2.jpeg" afterPath="$PROJECT_DIR$/public/uploads/picture/coverpath/3/thumb_ruby2.jpeg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/picture/coverpath/4/ruby5.jpg" afterPath="$PROJECT_DIR$/public/uploads/picture/coverpath/4/ruby5.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/picture/coverpath/4/thumb_ruby5.jpg" afterPath="$PROJECT_DIR$/public/uploads/picture/coverpath/4/thumb_ruby5.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/picture/coverpath/5/resized_ruby4.png" afterPath="$PROJECT_DIR$/public/uploads/picture/coverpath/5/resized_ruby4.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/picture/coverpath/5/ruby4.png" afterPath="$PROJECT_DIR$/public/uploads/picture/coverpath/5/ruby4.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/picture/coverpath/5/thumb_ruby4.png" afterPath="$PROJECT_DIR$/public/uploads/picture/coverpath/5/thumb_ruby4.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/picture/coverpath/6/ruby2.jpeg" afterPath="$PROJECT_DIR$/public/uploads/picture/coverpath/6/ruby2.jpeg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/picture/coverpath/6/thumb_ruby2.jpeg" afterPath="$PROJECT_DIR$/public/uploads/picture/coverpath/6/thumb_ruby2.jpeg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/picture/coverpath/7/ruby2.jpeg" afterPath="$PROJECT_DIR$/public/uploads/picture/coverpath/7/ruby2.jpeg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/picture/coverpath/7/thumb_ruby2.jpeg" afterPath="$PROJECT_DIR$/public/uploads/picture/coverpath/7/thumb_ruby2.jpeg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/picture/coverpath/8/ruby2.jpeg" afterPath="$PROJECT_DIR$/public/uploads/picture/coverpath/8/ruby2.jpeg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/picture/coverpath/8/thumb_ruby2.jpeg" afterPath="$PROJECT_DIR$/public/uploads/picture/coverpath/8/thumb_ruby2.jpeg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/picture/coverpath/9/pic03.jpg" afterPath="$PROJECT_DIR$/public/uploads/picture/coverpath/9/pic03.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/picture/coverpath/9/thumb_pic03.jpg" afterPath="$PROJECT_DIR$/public/uploads/picture/coverpath/9/thumb_pic03.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/tmp/1506610279-10971-0002-2125/ruby1.jpg" afterPath="$PROJECT_DIR$/public/uploads/tmp/1506610279-10971-0002-2125/ruby1.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/tmp/1506610279-10971-0002-2125/thumb_ruby1.jpg" afterPath="$PROJECT_DIR$/public/uploads/tmp/1506610279-10971-0002-2125/thumb_ruby1.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/tmp/1506610897-10971-0003-3994/ruby1.jpg" afterPath="$PROJECT_DIR$/public/uploads/tmp/1506610897-10971-0003-3994/ruby1.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/tmp/1506610897-10971-0003-3994/thumb_ruby1.jpg" afterPath="$PROJECT_DIR$/public/uploads/tmp/1506610897-10971-0003-3994/thumb_ruby1.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/tmp/1506610957-10971-0004-8476/ruby1.jpg" afterPath="$PROJECT_DIR$/public/uploads/tmp/1506610957-10971-0004-8476/ruby1.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/tmp/1506610957-10971-0004-8476/thumb_ruby1.jpg" afterPath="$PROJECT_DIR$/public/uploads/tmp/1506610957-10971-0004-8476/thumb_ruby1.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/tmp/1506610957-10971-0005-4582/ruby1.jpg" afterPath="$PROJECT_DIR$/public/uploads/tmp/1506610957-10971-0005-4582/ruby1.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/tmp/1506610957-10971-0005-4582/thumb_ruby1.jpg" afterPath="$PROJECT_DIR$/public/uploads/tmp/1506610957-10971-0005-4582/thumb_ruby1.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/tmp/1507198093-5016-0001-5802/pic02.jpg" afterPath="$PROJECT_DIR$/public/uploads/tmp/1507198093-5016-0001-5802/pic02.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/tmp/1507198093-5016-0001-5802/thumb_pic02.jpg" afterPath="$PROJECT_DIR$/public/uploads/tmp/1507198093-5016-0001-5802/thumb_pic02.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/tmp/1507198268-5016-0002-1772/pic06.jpg" afterPath="$PROJECT_DIR$/public/uploads/tmp/1507198268-5016-0002-1772/pic06.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/tmp/1507198268-5016-0002-1772/thumb_pic06.jpg" afterPath="$PROJECT_DIR$/public/uploads/tmp/1507198268-5016-0002-1772/thumb_pic06.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/tmp/1507198291-5016-0003-7678/pic06.jpg" afterPath="$PROJECT_DIR$/public/uploads/tmp/1507198291-5016-0003-7678/pic06.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/tmp/1507198291-5016-0003-7678/thumb_pic06.jpg" afterPath="$PROJECT_DIR$/public/uploads/tmp/1507198291-5016-0003-7678/thumb_pic06.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/tmp/1507198372-5016-0004-2005/pic06.jpg" afterPath="$PROJECT_DIR$/public/uploads/tmp/1507198372-5016-0004-2005/pic06.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/tmp/1507198372-5016-0004-2005/thumb_pic06.jpg" afterPath="$PROJECT_DIR$/public/uploads/tmp/1507198372-5016-0004-2005/thumb_pic06.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/tmp/1507198374-5016-0005-8993/pic03.jpg" afterPath="$PROJECT_DIR$/public/uploads/tmp/1507198374-5016-0005-8993/pic03.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/tmp/1507198374-5016-0005-8993/thumb_pic03.jpg" afterPath="$PROJECT_DIR$/public/uploads/tmp/1507198374-5016-0005-8993/thumb_pic03.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/tmp/1507198391-5016-0006-3542/pic07.jpg" afterPath="$PROJECT_DIR$/public/uploads/tmp/1507198391-5016-0006-3542/pic07.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/tmp/1507198391-5016-0006-3542/thumb_pic07.jpg" afterPath="$PROJECT_DIR$/public/uploads/tmp/1507198391-5016-0006-3542/thumb_pic07.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/tmp/1507198710-5016-0007-8590/pic01.jpg" afterPath="$PROJECT_DIR$/public/uploads/tmp/1507198710-5016-0007-8590/pic01.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/tmp/1507198710-5016-0007-8590/thumb_pic01.jpg" afterPath="$PROJECT_DIR$/public/uploads/tmp/1507198710-5016-0007-8590/thumb_pic01.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/tmp/1507198779-5016-0008-1600/pic06.jpg" afterPath="$PROJECT_DIR$/public/uploads/tmp/1507198779-5016-0008-1600/pic06.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/tmp/1507198779-5016-0008-1600/thumb_pic06.jpg" afterPath="$PROJECT_DIR$/public/uploads/tmp/1507198779-5016-0008-1600/thumb_pic06.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/tmp/1507198856-5016-0009-4201/pic06.jpg" afterPath="$PROJECT_DIR$/public/uploads/tmp/1507198856-5016-0009-4201/pic06.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/tmp/1507198856-5016-0009-4201/thumb_pic06.jpg" afterPath="$PROJECT_DIR$/public/uploads/tmp/1507198856-5016-0009-4201/thumb_pic06.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/tmp/1507198895-5016-0010-6189/pic06.jpg" afterPath="$PROJECT_DIR$/public/uploads/tmp/1507198895-5016-0010-6189/pic06.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/tmp/1507198895-5016-0010-6189/thumb_pic06.jpg" afterPath="$PROJECT_DIR$/public/uploads/tmp/1507198895-5016-0010-6189/thumb_pic06.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/tmp/1507198989-5016-0011-2241/pic09.jpg" afterPath="$PROJECT_DIR$/public/uploads/tmp/1507198989-5016-0011-2241/pic09.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/tmp/1507198989-5016-0011-2241/thumb_pic09.jpg" afterPath="$PROJECT_DIR$/public/uploads/tmp/1507198989-5016-0011-2241/thumb_pic09.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/tmp/1507199087-5016-0012-5017/pic09.jpg" afterPath="$PROJECT_DIR$/public/uploads/tmp/1507199087-5016-0012-5017/pic09.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/tmp/1507199087-5016-0012-5017/thumb_pic09.jpg" afterPath="$PROJECT_DIR$/public/uploads/tmp/1507199087-5016-0012-5017/thumb_pic09.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/tmp/1507199123-5016-0013-0867/pic01.jpg" afterPath="$PROJECT_DIR$/public/uploads/tmp/1507199123-5016-0013-0867/pic01.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/tmp/1507199123-5016-0013-0867/thumb_pic01.jpg" afterPath="$PROJECT_DIR$/public/uploads/tmp/1507199123-5016-0013-0867/thumb_pic01.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/tmp/1507199305-5016-0014-5194/pic06.jpg" afterPath="$PROJECT_DIR$/public/uploads/tmp/1507199305-5016-0014-5194/pic06.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/tmp/1507199305-5016-0014-5194/thumb_pic06.jpg" afterPath="$PROJECT_DIR$/public/uploads/tmp/1507199305-5016-0014-5194/thumb_pic06.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/tmp/1507199354-5016-0015-3264/pic02.jpg" afterPath="$PROJECT_DIR$/public/uploads/tmp/1507199354-5016-0015-3264/pic02.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/tmp/1507199354-5016-0015-3264/thumb_pic02.jpg" afterPath="$PROJECT_DIR$/public/uploads/tmp/1507199354-5016-0015-3264/thumb_pic02.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/tmp/1507205538-5016-0016-2517/pic08.jpg" afterPath="$PROJECT_DIR$/public/uploads/tmp/1507205538-5016-0016-2517/pic08.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/tmp/1507205538-5016-0016-2517/thumb_pic08.jpg" afterPath="$PROJECT_DIR$/public/uploads/tmp/1507205538-5016-0016-2517/thumb_pic08.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/tmp/1507205674-5016-0017-0312/pic06.jpg" afterPath="$PROJECT_DIR$/public/uploads/tmp/1507205674-5016-0017-0312/pic06.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/tmp/1507205674-5016-0017-0312/thumb_pic06.jpg" afterPath="$PROJECT_DIR$/public/uploads/tmp/1507205674-5016-0017-0312/thumb_pic06.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/tmp/1507206458-5016-0018-0163/pic06.jpg" afterPath="$PROJECT_DIR$/public/uploads/tmp/1507206458-5016-0018-0163/pic06.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/tmp/1507206458-5016-0018-0163/thumb_pic06.jpg" afterPath="$PROJECT_DIR$/public/uploads/tmp/1507206458-5016-0018-0163/thumb_pic06.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/tmp/1507206490-5016-0019-8353/pic04.jpg" afterPath="$PROJECT_DIR$/public/uploads/tmp/1507206490-5016-0019-8353/pic04.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/tmp/1507206490-5016-0019-8353/thumb_pic04.jpg" afterPath="$PROJECT_DIR$/public/uploads/tmp/1507206490-5016-0019-8353/thumb_pic04.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/tmp/1507206614-5016-0020-5876/pic07.jpg" afterPath="$PROJECT_DIR$/public/uploads/tmp/1507206614-5016-0020-5876/pic07.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/tmp/1507206614-5016-0020-5876/thumb_pic07.jpg" afterPath="$PROJECT_DIR$/public/uploads/tmp/1507206614-5016-0020-5876/thumb_pic07.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/tmp/1507206670-5016-0021-4453/pic07.jpg" afterPath="$PROJECT_DIR$/public/uploads/tmp/1507206670-5016-0021-4453/pic07.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/tmp/1507206670-5016-0021-4453/thumb_pic07.jpg" afterPath="$PROJECT_DIR$/public/uploads/tmp/1507206670-5016-0021-4453/thumb_pic07.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/tmp/1507206820-5016-0022-0734/pic04.jpg" afterPath="$PROJECT_DIR$/public/uploads/tmp/1507206820-5016-0022-0734/pic04.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/tmp/1507206820-5016-0022-0734/thumb_pic04.jpg" afterPath="$PROJECT_DIR$/public/uploads/tmp/1507206820-5016-0022-0734/thumb_pic04.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/tmp/1507206838-5016-0023-5654/pic09.jpg" afterPath="$PROJECT_DIR$/public/uploads/tmp/1507206838-5016-0023-5654/pic09.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/tmp/1507206838-5016-0023-5654/thumb_pic09.jpg" afterPath="$PROJECT_DIR$/public/uploads/tmp/1507206838-5016-0023-5654/thumb_pic09.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/tmp/1507206911-5016-0024-6204/pic08.jpg" afterPath="$PROJECT_DIR$/public/uploads/tmp/1507206911-5016-0024-6204/pic08.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/tmp/1507206911-5016-0024-6204/thumb_pic08.jpg" afterPath="$PROJECT_DIR$/public/uploads/tmp/1507206911-5016-0024-6204/thumb_pic08.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/tmp/1507206957-5016-0025-9816/pic07.jpg" afterPath="$PROJECT_DIR$/public/uploads/tmp/1507206957-5016-0025-9816/pic07.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/tmp/1507206957-5016-0025-9816/thumb_pic07.jpg" afterPath="$PROJECT_DIR$/public/uploads/tmp/1507206957-5016-0025-9816/thumb_pic07.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/tmp/1507206988-5016-0026-5827/pic10.jpg" afterPath="$PROJECT_DIR$/public/uploads/tmp/1507206988-5016-0026-5827/pic10.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/tmp/1507206988-5016-0026-5827/thumb_pic10.jpg" afterPath="$PROJECT_DIR$/public/uploads/tmp/1507206988-5016-0026-5827/thumb_pic10.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/tmp/1507207472-5016-0027-7122/pic09.jpg" afterPath="$PROJECT_DIR$/public/uploads/tmp/1507207472-5016-0027-7122/pic09.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/tmp/1507207472-5016-0027-7122/thumb_pic09.jpg" afterPath="$PROJECT_DIR$/public/uploads/tmp/1507207472-5016-0027-7122/thumb_pic09.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/tmp/1507208154-5016-0028-1601/pic09.jpg" afterPath="$PROJECT_DIR$/public/uploads/tmp/1507208154-5016-0028-1601/pic09.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/tmp/1507208154-5016-0028-1601/thumb_pic09.jpg" afterPath="$PROJECT_DIR$/public/uploads/tmp/1507208154-5016-0028-1601/thumb_pic09.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/tmp/1507208173-5016-0029-1830/pic04.jpg" afterPath="$PROJECT_DIR$/public/uploads/tmp/1507208173-5016-0029-1830/pic04.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/tmp/1507208173-5016-0029-1830/thumb_pic04.jpg" afterPath="$PROJECT_DIR$/public/uploads/tmp/1507208173-5016-0029-1830/thumb_pic04.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/tmp/1507208186-5016-0030-9127/pic05.jpg" afterPath="$PROJECT_DIR$/public/uploads/tmp/1507208186-5016-0030-9127/pic05.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/tmp/1507208186-5016-0030-9127/thumb_pic05.jpg" afterPath="$PROJECT_DIR$/public/uploads/tmp/1507208186-5016-0030-9127/thumb_pic05.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/tmp/1507208583-5016-0031-9918/pic03.jpg" afterPath="$PROJECT_DIR$/public/uploads/tmp/1507208583-5016-0031-9918/pic03.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/tmp/1507208583-5016-0031-9918/thumb_pic03.jpg" afterPath="$PROJECT_DIR$/public/uploads/tmp/1507208583-5016-0031-9918/thumb_pic03.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/tmp/1507208717-5016-0032-9604/pic08.jpg" afterPath="$PROJECT_DIR$/public/uploads/tmp/1507208717-5016-0032-9604/pic08.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/tmp/1507208717-5016-0032-9604/thumb_pic08.jpg" afterPath="$PROJECT_DIR$/public/uploads/tmp/1507208717-5016-0032-9604/thumb_pic08.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/tmp/1507208752-5016-0033-1831/pic09.jpg" afterPath="$PROJECT_DIR$/public/uploads/tmp/1507208752-5016-0033-1831/pic09.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/tmp/1507208752-5016-0033-1831/thumb_pic09.jpg" afterPath="$PROJECT_DIR$/public/uploads/tmp/1507208752-5016-0033-1831/thumb_pic09.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/tmp/1507209957-5016-0034-0844/pic06.jpg" afterPath="$PROJECT_DIR$/public/uploads/tmp/1507209957-5016-0034-0844/pic06.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/tmp/1507209957-5016-0034-0844/thumb_pic06.jpg" afterPath="$PROJECT_DIR$/public/uploads/tmp/1507209957-5016-0034-0844/thumb_pic06.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/tmp/1507210171-5016-0035-1895/pic06.jpg" afterPath="$PROJECT_DIR$/public/uploads/tmp/1507210171-5016-0035-1895/pic06.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/tmp/1507210171-5016-0035-1895/thumb_pic06.jpg" afterPath="$PROJECT_DIR$/public/uploads/tmp/1507210171-5016-0035-1895/thumb_pic06.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/tmp/1507210185-5016-0036-7195/pic04.jpg" afterPath="$PROJECT_DIR$/public/uploads/tmp/1507210185-5016-0036-7195/pic04.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/tmp/1507210185-5016-0036-7195/thumb_pic04.jpg" afterPath="$PROJECT_DIR$/public/uploads/tmp/1507210185-5016-0036-7195/thumb_pic04.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/controllers/.keep" afterPath="$PROJECT_DIR$/test/controllers/.keep" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/fixtures/.keep" afterPath="$PROJECT_DIR$/test/fixtures/.keep" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/fixtures/files/.keep" afterPath="$PROJECT_DIR$/test/fixtures/files/.keep" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/helpers/.keep" afterPath="$PROJECT_DIR$/test/helpers/.keep" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/integration/.keep" afterPath="$PROJECT_DIR$/test/integration/.keep" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/mailers/.keep" afterPath="$PROJECT_DIR$/test/mailers/.keep" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/models/.keep" afterPath="$PROJECT_DIR$/test/models/.keep" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/system/.keep" afterPath="$PROJECT_DIR$/test/system/.keep" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/.keep" afterPath="$PROJECT_DIR$/tmp/.keep" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/.keep" afterPath="$PROJECT_DIR$/vendor/.keep" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.generators" afterPath="$PROJECT_DIR$/.idea/.generators" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.rakeTasks" afterPath="$PROJECT_DIR$/.idea/.rakeTasks" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/29a1ff5d-12bd-4c79-9633-df713ca7ffb6/storage.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/29a1ff5d-12bd-4c79-9633-df713ca7ffb6/storage.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/8c36b0f0-f131-4c29-b5c0-9436ff8babf8.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/8c36b0f0-f131-4c29-b5c0-9436ff8babf8.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/8c36b0f0-f131-4c29-b5c0-9436ff8babf8/storage.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/8c36b0f0-f131-4c29-b5c0-9436ff8babf8/storage.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/rubyBlog.iml" afterPath="$PROJECT_DIR$/.idea/rubyBlog.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Rakefile" afterPath="$PROJECT_DIR$/Rakefile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/config/manifest.js" afterPath="$PROJECT_DIR$/app/assets/config/manifest.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/fonts/fontawesome-webfont.svg" afterPath="$PROJECT_DIR$/app/assets/fonts/fontawesome-webfont.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/application.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/application.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/authors.coffee" afterPath="$PROJECT_DIR$/app/assets/javascripts/authors.coffee" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/cable.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/cable.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/categories.coffee" afterPath="$PROJECT_DIR$/app/assets/javascripts/categories.coffee" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/comments.coffee" afterPath="$PROJECT_DIR$/app/assets/javascripts/comments.coffee" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/ie/html5shiv.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/ie/html5shiv.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/ie/respond.min.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/ie/respond.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/jquery.min.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/jquery.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/main.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/pictures.coffee" afterPath="$PROJECT_DIR$/app/assets/javascripts/pictures.coffee" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/posts.coffee" afterPath="$PROJECT_DIR$/app/assets/javascripts/posts.coffee" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/skel.min.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/skel.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/util.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/util.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/authors.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/authors.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/base/_page.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/base/_page.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/base/_typography.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/base/_typography.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/blog.css" afterPath="$PROJECT_DIR$/app/assets/stylesheets/blog.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/categories.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/categories.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/comments.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/comments.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/components/_author.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/components/_author.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/components/_blurb.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/components/_blurb.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/components/_box.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/components/_box.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/components/_button.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/components/_button.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/components/_form.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/components/_form.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/components/_icon.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/components/_icon.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/components/_image.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/components/_image.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/components/_list.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/components/_list.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/components/_mini-post.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/components/_mini-post.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/components/_post.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/components/_post.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/components/_section.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/components/_section.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/components/_table.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/components/_table.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/ie8.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/ie8.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/ie9.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/ie9.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/layout/_footer.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/layout/_footer.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/layout/_header.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/layout/_header.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/layout/_intro.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/layout/_intro.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/layout/_main.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/layout/_main.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/layout/_menu.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/layout/_menu.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/layout/_sidebar.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/layout/_sidebar.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/layout/_wrapper.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/layout/_wrapper.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/libs/_functions.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/libs/_functions.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/libs/_mixins.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/libs/_mixins.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/libs/_skel.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/libs/_skel.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/libs/_vars.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/libs/_vars.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/main.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/main.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/pictures.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/pictures.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/posts.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/posts.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/scaffolds.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/scaffolds.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/signin.css" afterPath="$PROJECT_DIR$/app/assets/stylesheets/signin.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/channels/application_cable/channel.rb" afterPath="$PROJECT_DIR$/app/channels/application_cable/channel.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/channels/application_cable/connection.rb" afterPath="$PROJECT_DIR$/app/channels/application_cable/connection.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/application_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/application_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/categories_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/categories_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/comments_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/comments_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/pictures_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/pictures_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/posts_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/posts_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/users/confirmations_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/users/confirmations_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/users/omniauth_callbacks_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/users/omniauth_callbacks_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/users/passwords_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/users/passwords_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/users/registrations_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/users/registrations_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/users/sessions_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/users/sessions_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/users/unlocks_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/users/unlocks_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/helpers/application_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/application_helper.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/helpers/authors_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/authors_helper.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/helpers/categories_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/categories_helper.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/helpers/comments_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/comments_helper.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/helpers/pictures_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/pictures_helper.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/helpers/posts_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/posts_helper.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/jobs/application_job.rb" afterPath="$PROJECT_DIR$/app/jobs/application_job.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/mailers/application_mailer.rb" afterPath="$PROJECT_DIR$/app/mailers/application_mailer.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/ahoy/event.rb" afterPath="$PROJECT_DIR$/app/models/ahoy/event.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/application_record.rb" afterPath="$PROJECT_DIR$/app/models/application_record.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/author.rb" afterPath="$PROJECT_DIR$/app/models/author.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/category.rb" afterPath="$PROJECT_DIR$/app/models/category.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/comment.rb" afterPath="$PROJECT_DIR$/app/models/comment.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/picture.rb" afterPath="$PROJECT_DIR$/app/models/picture.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/post.rb" afterPath="$PROJECT_DIR$/app/models/post.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/post_category.rb" afterPath="$PROJECT_DIR$/app/models/post_category.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/user.rb" afterPath="$PROJECT_DIR$/app/models/user.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/visit.rb" afterPath="$PROJECT_DIR$/app/models/visit.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/uploaders/image_uploader.rb" afterPath="$PROJECT_DIR$/app/uploaders/image_uploader.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/categories/_category.json.jbuilder" afterPath="$PROJECT_DIR$/app/views/categories/_category.json.jbuilder" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/categories/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/categories/_form.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/categories/edit.html.erb" afterPath="$PROJECT_DIR$/app/views/categories/edit.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/categories/index.html.erb" afterPath="$PROJECT_DIR$/app/views/categories/index.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/categories/index.json.jbuilder" afterPath="$PROJECT_DIR$/app/views/categories/index.json.jbuilder" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/categories/new.html.erb" afterPath="$PROJECT_DIR$/app/views/categories/new.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/categories/show.html.erb" afterPath="$PROJECT_DIR$/app/views/categories/show.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/categories/show.json.jbuilder" afterPath="$PROJECT_DIR$/app/views/categories/show.json.jbuilder" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/comments/_comment.json.jbuilder" afterPath="$PROJECT_DIR$/app/views/comments/_comment.json.jbuilder" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/comments/_comments.html.erb" afterPath="$PROJECT_DIR$/app/views/comments/_comments.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/comments/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/comments/_form.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/comments/edit.html.erb" afterPath="$PROJECT_DIR$/app/views/comments/edit.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/comments/index.html.erb" afterPath="$PROJECT_DIR$/app/views/comments/index.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/comments/index.json.jbuilder" afterPath="$PROJECT_DIR$/app/views/comments/index.json.jbuilder" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/comments/new.html.erb" afterPath="$PROJECT_DIR$/app/views/comments/new.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/comments/show.html.erb" afterPath="$PROJECT_DIR$/app/views/comments/show.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/comments/show.json.jbuilder" afterPath="$PROJECT_DIR$/app/views/comments/show.json.jbuilder" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/mailer.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/mailer.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/mailer.text.erb" afterPath="$PROJECT_DIR$/app/views/layouts/mailer.text.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/pictures/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/pictures/_form.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/pictures/_picture.json.jbuilder" afterPath="$PROJECT_DIR$/app/views/pictures/_picture.json.jbuilder" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/pictures/edit.html.erb" afterPath="$PROJECT_DIR$/app/views/pictures/edit.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/pictures/index.html.erb" afterPath="$PROJECT_DIR$/app/views/pictures/index.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/pictures/index.json.jbuilder" afterPath="$PROJECT_DIR$/app/views/pictures/index.json.jbuilder" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/pictures/new.html.erb" afterPath="$PROJECT_DIR$/app/views/pictures/new.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/pictures/show.html.erb" afterPath="$PROJECT_DIR$/app/views/pictures/show.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/pictures/show.json.jbuilder" afterPath="$PROJECT_DIR$/app/views/pictures/show.json.jbuilder" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/posts/_footer.erb" afterPath="$PROJECT_DIR$/app/views/posts/_footer.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/posts/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/posts/_form.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/posts/_post.json.jbuilder" afterPath="$PROJECT_DIR$/app/views/posts/_post.json.jbuilder" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/posts/edit.html.erb" afterPath="$PROJECT_DIR$/app/views/posts/edit.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/posts/index.html.erb" afterPath="$PROJECT_DIR$/app/views/posts/index.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/posts/index.json.jbuilder" afterPath="$PROJECT_DIR$/app/views/posts/index.json.jbuilder" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/posts/new.html.erb" afterPath="$PROJECT_DIR$/app/views/posts/new.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/posts/show.html.erb" afterPath="$PROJECT_DIR$/app/views/posts/show.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/posts/show.json.jbuilder" afterPath="$PROJECT_DIR$/app/views/posts/show.json.jbuilder" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/users/confirmations/new.html.erb" afterPath="$PROJECT_DIR$/app/views/users/confirmations/new.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/users/mailer/confirmation_instructions.html.erb" afterPath="$PROJECT_DIR$/app/views/users/mailer/confirmation_instructions.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/users/mailer/email_changed.html.erb" afterPath="$PROJECT_DIR$/app/views/users/mailer/email_changed.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/users/mailer/password_change.html.erb" afterPath="$PROJECT_DIR$/app/views/users/mailer/password_change.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/users/mailer/reset_password_instructions.html.erb" afterPath="$PROJECT_DIR$/app/views/users/mailer/reset_password_instructions.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/users/mailer/unlock_instructions.html.erb" afterPath="$PROJECT_DIR$/app/views/users/mailer/unlock_instructions.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/users/passwords/edit.html.erb" afterPath="$PROJECT_DIR$/app/views/users/passwords/edit.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/users/passwords/new.html.erb" afterPath="$PROJECT_DIR$/app/views/users/passwords/new.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/users/registrations/edit.html.erb" afterPath="$PROJECT_DIR$/app/views/users/registrations/edit.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/users/registrations/new.html.erb" afterPath="$PROJECT_DIR$/app/views/users/registrations/new.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/users/sessions/new.html.erb" afterPath="$PROJECT_DIR$/app/views/users/sessions/new.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/users/shared/_links.html.erb" afterPath="$PROJECT_DIR$/app/views/users/shared/_links.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/users/unlocks/new.html.erb" afterPath="$PROJECT_DIR$/app/views/users/unlocks/new.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config.ru" afterPath="$PROJECT_DIR$/config.ru" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/application.rb" afterPath="$PROJECT_DIR$/config/application.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/boot.rb" afterPath="$PROJECT_DIR$/config/boot.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/cable.yml" afterPath="$PROJECT_DIR$/config/cable.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/database.yml" afterPath="$PROJECT_DIR$/config/database.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environment.rb" afterPath="$PROJECT_DIR$/config/environment.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environments/development.rb" afterPath="$PROJECT_DIR$/config/environments/development.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environments/production.rb" afterPath="$PROJECT_DIR$/config/environments/production.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environments/test.rb" afterPath="$PROJECT_DIR$/config/environments/test.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/initializers/ahoy.rb" afterPath="$PROJECT_DIR$/config/initializers/ahoy.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/initializers/application_controller_renderer.rb" afterPath="$PROJECT_DIR$/config/initializers/application_controller_renderer.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/initializers/assets.rb" afterPath="$PROJECT_DIR$/config/initializers/assets.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/initializers/backtrace_silencers.rb" afterPath="$PROJECT_DIR$/config/initializers/backtrace_silencers.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/initializers/carrier_wave.rb" afterPath="$PROJECT_DIR$/config/initializers/carrier_wave.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/initializers/commontator.rb" afterPath="$PROJECT_DIR$/config/initializers/commontator.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/initializers/cookies_serializer.rb" afterPath="$PROJECT_DIR$/config/initializers/cookies_serializer.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/initializers/devise.rb" afterPath="$PROJECT_DIR$/config/initializers/devise.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/initializers/filter_parameter_logging.rb" afterPath="$PROJECT_DIR$/config/initializers/filter_parameter_logging.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/initializers/impression.rb" afterPath="$PROJECT_DIR$/config/initializers/impression.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/initializers/inflections.rb" afterPath="$PROJECT_DIR$/config/initializers/inflections.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/initializers/mime_types.rb" afterPath="$PROJECT_DIR$/config/initializers/mime_types.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/initializers/simple_form.rb" afterPath="$PROJECT_DIR$/config/initializers/simple_form.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/initializers/wrap_parameters.rb" afterPath="$PROJECT_DIR$/config/initializers/wrap_parameters.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/locales/devise.en.yml" afterPath="$PROJECT_DIR$/config/locales/devise.en.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/locales/en.yml" afterPath="$PROJECT_DIR$/config/locales/en.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/locales/simple_form.en.yml" afterPath="$PROJECT_DIR$/config/locales/simple_form.en.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/puma.rb" afterPath="$PROJECT_DIR$/config/puma.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/secrets.yml" afterPath="$PROJECT_DIR$/config/secrets.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/spring.rb" afterPath="$PROJECT_DIR$/config/spring.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20170922142651_devise_create_users.rb" afterPath="$PROJECT_DIR$/db/migrate/20170922142651_devise_create_users.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20170925132627_add_name_to_user.rb" afterPath="$PROJECT_DIR$/db/migrate/20170925132627_add_name_to_user.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20170926123117_create_posts.rb" afterPath="$PROJECT_DIR$/db/migrate/20170926123117_create_posts.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20170927120905_create_comments.rb" afterPath="$PROJECT_DIR$/db/migrate/20170927120905_create_comments.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20170927132543_remove_name_from_user.rb" afterPath="$PROJECT_DIR$/db/migrate/20170927132543_remove_name_from_user.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20170927132630_add_first_name_and_last_name_to_user.rb" afterPath="$PROJECT_DIR$/db/migrate/20170927132630_add_first_name_and_last_name_to_user.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20170927165751_create_authors.rb" afterPath="$PROJECT_DIR$/db/migrate/20170927165751_create_authors.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20170927170100_create_pictures.rb" afterPath="$PROJECT_DIR$/db/migrate/20170927170100_create_pictures.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20170927170207_add_name_to_picture.rb" afterPath="$PROJECT_DIR$/db/migrate/20170927170207_add_name_to_picture.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20170927170700_add_pub_date_to_post.rb" afterPath="$PROJECT_DIR$/db/migrate/20170927170700_add_pub_date_to_post.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20170927175216_add_user_id_and_post_id_to_author.rb" afterPath="$PROJECT_DIR$/db/migrate/20170927175216_add_user_id_and_post_id_to_author.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20170927175254_remove_name_from_author.rb" afterPath="$PROJECT_DIR$/db/migrate/20170927175254_remove_name_from_author.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20170927180039_add_post_id_to_comment.rb" afterPath="$PROJECT_DIR$/db/migrate/20170927180039_add_post_id_to_comment.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20170927182440_add_avatarpath_to_user.rb" afterPath="$PROJECT_DIR$/db/migrate/20170927182440_add_avatarpath_to_user.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20170928123233_create_categories.rb" afterPath="$PROJECT_DIR$/db/migrate/20170928123233_create_categories.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20170928123302_create_post_categories.rb" afterPath="$PROJECT_DIR$/db/migrate/20170928123302_create_post_categories.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20170928143904_add_post_id_to_picture.rb" afterPath="$PROJECT_DIR$/db/migrate/20170928143904_add_post_id_to_picture.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20170929151751_acts_as_votable_migration.rb" afterPath="$PROJECT_DIR$/db/migrate/20170929151751_acts_as_votable_migration.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20171003134442_add_user_id_to_post.rb" afterPath="$PROJECT_DIR$/db/migrate/20171003134442_add_user_id_to_post.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20171004121928_add_cached_votes_to_posts.rb" afterPath="$PROJECT_DIR$/db/migrate/20171004121928_add_cached_votes_to_posts.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20171005192036_create_visits.rb" afterPath="$PROJECT_DIR$/db/migrate/20171005192036_create_visits.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20171005192037_create_ahoy_events.rb" afterPath="$PROJECT_DIR$/db/migrate/20171005192037_create_ahoy_events.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20171006104745_remove_pub_date_from_post.rb" afterPath="$PROJECT_DIR$/db/migrate/20171006104745_remove_pub_date_from_post.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20171006105425_add_pub_date_to_posts.rb" afterPath="$PROJECT_DIR$/db/migrate/20171006105425_add_pub_date_to_posts.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20171007195010_create_impressions_table.rb" afterPath="$PROJECT_DIR$/db/migrate/20171007195010_create_impressions_table.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20171007203818_add_counter_cache_to_post.rb" afterPath="$PROJECT_DIR$/db/migrate/20171007203818_add_counter_cache_to_post.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20171009152548_add_parent_id_to_comment.rb" afterPath="$PROJECT_DIR$/db/migrate/20171009152548_add_parent_id_to_comment.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20171009152711_create_comment_hierarchies.rb" afterPath="$PROJECT_DIR$/db/migrate/20171009152711_create_comment_hierarchies.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20171012101832_add_user_id_to_comment.rb" afterPath="$PROJECT_DIR$/db/migrate/20171012101832_add_user_id_to_comment.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/seeds.rb" afterPath="$PROJECT_DIR$/db/seeds.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/templates/erb/scaffold/_form.html.erb" afterPath="$PROJECT_DIR$/lib/templates/erb/scaffold/_form.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/404.html" afterPath="$PROJECT_DIR$/public/404.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/422.html" afterPath="$PROJECT_DIR$/public/422.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/500.html" afterPath="$PROJECT_DIR$/public/500.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/.sprockets-manifest-ef500b7ffa51d3bd730cf47380e4a5dd.json" afterPath="$PROJECT_DIR$/public/assets/.sprockets-manifest-ef500b7ffa51d3bd730cf47380e4a5dd.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/application-18487b7ec54cb58905de915bcc19a60da672e6a1cfe3f22d465727ed04d36326.css" afterPath="$PROJECT_DIR$/public/assets/application-18487b7ec54cb58905de915bcc19a60da672e6a1cfe3f22d465727ed04d36326.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/application-60b3c1ceca2d835847b3753d1ea4ea5eea088a3f8cc9b37cb59de87e99cfa3d5.js" afterPath="$PROJECT_DIR$/public/assets/application-60b3c1ceca2d835847b3753d1ea4ea5eea088a3f8cc9b37cb59de87e99cfa3d5.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/font-awesome/fontawesome-webfont-ad6157926c1622ba4e1d03d478f1541368524bfc46f51e42fe0d945f7ef323e4.svg" afterPath="$PROJECT_DIR$/public/assets/font-awesome/fontawesome-webfont-ad6157926c1622ba4e1d03d478f1541368524bfc46f51e42fe0d945f7ef323e4.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/fontawesome-webfont-8e3586389bb4cd01b3f85bb3b622739bde6627f28bba63a020c223ca9cf1b9ae.svg" afterPath="$PROJECT_DIR$/public/assets/fontawesome-webfont-8e3586389bb4cd01b3f85bb3b622739bde6627f28bba63a020c223ca9cf1b9ae.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/robots.txt" afterPath="$PROJECT_DIR$/public/robots.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/application_system_test_case.rb" afterPath="$PROJECT_DIR$/test/application_system_test_case.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/controllers/authors_controller_test.rb" afterPath="$PROJECT_DIR$/test/controllers/authors_controller_test.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/controllers/categories_controller_test.rb" afterPath="$PROJECT_DIR$/test/controllers/categories_controller_test.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/controllers/comments_controller_test.rb" afterPath="$PROJECT_DIR$/test/controllers/comments_controller_test.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/controllers/pictures_controller_test.rb" afterPath="$PROJECT_DIR$/test/controllers/pictures_controller_test.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/controllers/posts_controller_test.rb" afterPath="$PROJECT_DIR$/test/controllers/posts_controller_test.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/fixtures/authors.yml" afterPath="$PROJECT_DIR$/test/fixtures/authors.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/fixtures/categories.yml" afterPath="$PROJECT_DIR$/test/fixtures/categories.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/fixtures/comments.yml" afterPath="$PROJECT_DIR$/test/fixtures/comments.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/fixtures/pictures.yml" afterPath="$PROJECT_DIR$/test/fixtures/pictures.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/fixtures/post_categories.yml" afterPath="$PROJECT_DIR$/test/fixtures/post_categories.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/fixtures/posts.yml" afterPath="$PROJECT_DIR$/test/fixtures/posts.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/fixtures/users.yml" afterPath="$PROJECT_DIR$/test/fixtures/users.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/models/author_test.rb" afterPath="$PROJECT_DIR$/test/models/author_test.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/models/category_test.rb" afterPath="$PROJECT_DIR$/test/models/category_test.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/models/comment_test.rb" afterPath="$PROJECT_DIR$/test/models/comment_test.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/models/picture_test.rb" afterPath="$PROJECT_DIR$/test/models/picture_test.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/models/post_category_test.rb" afterPath="$PROJECT_DIR$/test/models/post_category_test.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/models/post_test.rb" afterPath="$PROJECT_DIR$/test/models/post_test.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/models/user_test.rb" afterPath="$PROJECT_DIR$/test/models/user_test.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/system/authors_test.rb" afterPath="$PROJECT_DIR$/test/system/authors_test.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/system/categories_test.rb" afterPath="$PROJECT_DIR$/test/system/categories_test.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/system/comments_test.rb" afterPath="$PROJECT_DIR$/test/system/comments_test.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/system/pictures_test.rb" afterPath="$PROJECT_DIR$/test/system/pictures_test.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/system/posts_test.rb" afterPath="$PROJECT_DIR$/test/system/posts_test.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/test_helper.rb" afterPath="$PROJECT_DIR$/test/test_helper.rb" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -33,8 +475,8 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/rubyBlog@db_rollback__rubyBlog.coverage" NAME="db:rollback: rubyBlog Coverage Results" MODIFIED="1507405624638" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="rubyBlog" />
-    <SUITE FILE_PATH="coverage/rubyBlog@Development__rubyBlog.coverage" NAME="Development: rubyBlog Coverage Results" MODIFIED="1507991902220" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="rubyBlog" />
-    <SUITE FILE_PATH="coverage/rubyBlog@routes__rubyBlog.coverage" NAME="routes: rubyBlog Coverage Results" MODIFIED="1507996399120" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="rubyBlog" />
+    <SUITE FILE_PATH="coverage/rubyBlog@Development__rubyBlog.coverage" NAME="Development: rubyBlog Coverage Results" MODIFIED="1508172179844" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="rubyBlog" />
+    <SUITE FILE_PATH="coverage/rubyBlog@routes__rubyBlog.coverage" NAME="routes: rubyBlog Coverage Results" MODIFIED="1508176361369" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="rubyBlog" />
     <SUITE FILE_PATH="coverage/rubyBlog@assets_clobber__rubyBlog.coverage" NAME="assets:clobber: rubyBlog Coverage Results" MODIFIED="1506434747373" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="rubyBlog" />
     <SUITE FILE_PATH="coverage/rubyBlog@assets_precompile__rubyBlog.coverage" NAME="assets:precompile: rubyBlog Coverage Results" MODIFIED="1506434756487" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="rubyBlog" />
     <SUITE FILE_PATH="coverage/rubyBlog@db_migrate__rubyBlog.coverage" NAME="db:migrate: rubyBlog Coverage Results" MODIFIED="1507907575081" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="rubyBlog" />
@@ -76,88 +518,78 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="comments_controller.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/comments_controller.rb">
+      <file leaf-file-name="application.html.erb" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="169">
-              <caret line="28" column="3" lean-forward="false" selection-start-line="28" selection-start-column="3" selection-end-line="28" selection-end-column="3" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="authors_helper.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/helpers/authors_helper.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="application_helper.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/helpers/application_helper.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_form.html.erb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/comments/_form.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="10" lean-forward="true" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="show.html.erb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/posts/show.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="389">
-              <caret line="115" column="39" lean-forward="true" selection-start-line="115" selection-start-column="39" selection-end-line="115" selection-end-column="39" />
+            <state relative-caret-position="345">
+              <caret line="41" column="10" lean-forward="false" selection-start-line="41" selection-start-column="10" selection-end-line="41" selection-end-column="10" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="new.html.erb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/comments/new.html.erb">
+        <entry file="file://$PROJECT_DIR$/app/views/users/sessions/new.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="9" lean-forward="true" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_comments.html.erb" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/comments/_comments.html.erb">
+      <file leaf-file-name="sessions_controller.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/users/sessions_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="389">
-              <caret line="29" column="3" lean-forward="false" selection-start-line="29" selection-start-column="3" selection-end-line="29" selection-end-column="3" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="confirmations_controller.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/users/confirmations_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_links.html.erb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/users/shared/_links.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="index.html.erb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/comments/index.html.erb">
+        <entry file="file://$PROJECT_DIR$/app/views/posts/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="389">
-              <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+            <state relative-caret-position="30">
+              <caret line="35" column="68" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="138" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="edit.html.erb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/comments/edit.html.erb">
+      <file leaf-file-name="application.html.erb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/layouts/admin/application.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="146">
+              <caret line="27" column="1" lean-forward="true" selection-start-line="27" selection-start-column="1" selection-end-line="41" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="new.html.erb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/posts/new.html.erb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -166,11 +598,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.json.jbuilder" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/comments/index.json.jbuilder">
+      <file leaf-file-name="categories_controller.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/categories_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="426">
+              <caret line="59" column="38" lean-forward="true" selection-start-line="59" selection-start-column="38" selection-end-line="59" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html.erb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/admin/posts/index.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="435">
+              <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -221,17 +663,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/libs/_skel.scss" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/main.js" />
-        <option value="$PROJECT_DIR$/app/controllers/users/registrations_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/posts/_footer.erb" />
-        <option value="$PROJECT_DIR$/app/views/users/registrations/new.html.erb" />
-        <option value="$PROJECT_DIR$/config/initializers/devise.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/users/sessions_controller.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
-        <option value="$PROJECT_DIR$/db/migrate/20170927170700_add_pub_date_to_post.rb" />
-        <option value="$PROJECT_DIR$/app/models/author.rb" />
-        <option value="$PROJECT_DIR$/app/models/post_category.rb" />
         <option value="$PROJECT_DIR$/app/models/category.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20170928123302_create_post_categories.rb" />
         <option value="$PROJECT_DIR$/config/initializers/carrier_wave.rb" />
@@ -239,7 +670,6 @@
         <option value="$PROJECT_DIR$/config/application.rb" />
         <option value="$PROJECT_DIR$/app/models/picture.rb" />
         <option value="$PROJECT_DIR$/app/views/categories/new.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/db/migrate/20170929151751_acts_as_votable_migration.rb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/application.scss" />
         <option value="$PROJECT_DIR$/db/migrate/20171003144842_install_commontator.commontator.rb" />
@@ -258,20 +688,32 @@
         <option value="$PROJECT_DIR$/app/uploaders/image_uploader.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/app/views/comments/_comment.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/posts/index.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/posts/show.html.erb" />
         <option value="$PROJECT_DIR$/app/models/user.rb" />
         <option value="$PROJECT_DIR$/app/controllers/posts_controller.rb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/comments.scss" />
         <option value="$PROJECT_DIR$/db/migrate/20171009152711_create_comment_hierarchies.rb" />
         <option value="$PROJECT_DIR$/app/models/comment.rb" />
-        <option value="$PROJECT_DIR$/config/routes.rb" />
-        <option value="$PROJECT_DIR$/app/views/comments/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/comments/_form.html.erb" />
         <option value="$PROJECT_DIR$/app/helpers/comments_helper.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/comments_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/comments/new.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/posts/show.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/posts/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/comments/edit.html.erb" />
         <option value="$PROJECT_DIR$/app/views/comments/_comments.html.erb" />
+        <option value="$PROJECT_DIR$/app/controllers/comments_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/comments/index.html.erb" />
+        <option value="$PROJECT_DIR$/config/routes.rb" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/admin/application.scss" />
+        <option value="$PROJECT_DIR$/app/controllers/admin/posts_controller.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/admin/categories_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/admin/posts/edit.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/admin/categories/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/admin/users/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/controllers/admin/users_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/admin/menu.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/admin/posts/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/admin/application.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
       </list>
     </option>
   </component>
@@ -311,6 +753,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="RailsProjectView" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -327,12 +771,6 @@
               <item name="rubyBlog" type="b2602c69:ProjectViewProjectNode" />
               <item name="rubyBlog" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="rubyBlog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rubyBlog" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -340,22 +778,21 @@
               <item name="rubyBlog" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="comments" type="462c0819:PsiDirectoryNode" />
+              <item name="layouts" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="rubyBlog" type="b2602c69:ProjectViewProjectNode" />
               <item name="rubyBlog" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="posts" type="462c0819:PsiDirectoryNode" />
+              <item name="layouts" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="RailsProjectView" />
       <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -368,11 +805,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/controllers/admin" />
+      <recent name="$PROJECT_DIR$/app/views/admin" />
+      <recent name="$PROJECT_DIR$/app/views/layouts/admin" />
+      <recent name="$PROJECT_DIR$/app/assets/stylesheets/admin" />
       <recent name="$PROJECT_DIR$/app/assets/images/fallback" />
-      <recent name="$PROJECT_DIR$/app/assets/images" />
-      <recent name="$PROJECT_DIR$/app/assets/javascripts" />
-      <recent name="$PROJECT_DIR$/app/assets" />
-      <recent name="$PROJECT_DIR$/app/assets/stylesheets" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/app/assets/stylesheets" />
@@ -655,12 +1092,13 @@
       <workItem from="1507743584760" duration="7913000" />
       <workItem from="1507830704341" duration="9451000" />
       <workItem from="1507840299798" duration="370000" />
-      <workItem from="1507881570496" duration="15677000" />
+      <workItem from="1507881570496" duration="22369000" />
+      <workItem from="1508171773336" duration="10046000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="190238000" />
+    <option name="totallyTimeSpent" value="206976000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -672,15 +1110,15 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="51" y="-4" width="1315" height="772" extended-state="6" />
+    <frame x="0" y="-28" width="1317" height="780" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.285264" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28999212" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32886904" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22446044" sideWeight="0.5134512" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26294822" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16517857" sideWeight="0.51615447" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19196428" sideWeight="0.51615447" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.54761904" sideWeight="0.48384556" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -728,269 +1166,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../../../.rvm/rubies/ruby-2.4.0/lib/ruby/gems/2.4.0/gems/railties-5.1.4/lib/rails/engine.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="10200">
-          <caret line="680" column="9" lean-forward="false" selection-start-line="680" selection-start-column="9" selection-end-line="680" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20171007195010_create_impressions_table.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20171007201501_add_params_to_impressions.rb" />
-    <entry file="file://$PROJECT_DIR$/app/views/posts/index.json.jbuilder">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20171007203711_add_counter_cache_to_product.rb" />
-    <entry file="file://$PROJECT_DIR$/db/migrate/20171007203818_add_counter_cache_to_post.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="21" lean-forward="false" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/pictures/index.json.jbuilder">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/pictures/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/uploaders/image_uploader.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="45" column="12" lean-forward="false" selection-start-line="45" selection-start-column="12" selection-end-line="45" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/users/confirmations_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/users/omniauth_callbacks_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/users/passwords_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/users/unlocks_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/users/sessions_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/users/registrations_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20171009152548_add_parent_id_to_comment.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="12" lean-forward="false" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="64" column="18" lean-forward="false" selection-start-line="64" selection-start-column="18" selection-end-line="64" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/comments/_comment.html.erb" />
-    <entry file="file://$PROJECT_DIR$/app/controllers/authors_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20171012101832_add_user_id_to_comment.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="12" lean-forward="false" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/pictures_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="5" lean-forward="false" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/picture.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/visit.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/posts/new.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="60" lean-forward="false" selection-start-line="4" selection-start-column="60" selection-end-line="4" selection-end-column="60" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/categories_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-580">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/post.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/posts_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-613">
-          <caret line="19" column="20" lean-forward="false" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/main.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/blog.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1035">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/posts/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="49" column="15" lean-forward="false" selection-start-line="49" selection-start-column="15" selection-end-line="49" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/comments.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20171009152711_create_comment_hierarchies.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="5" lean-forward="false" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/comment.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="38" lean-forward="false" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/helpers/comments_helper.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="21" lean-forward="false" selection-start-line="0" selection-start-column="21" selection-end-line="0" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -998,7 +1177,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1006,7 +1184,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1014,7 +1191,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1022,7 +1198,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1030,39 +1205,41 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/posts/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="779">
+          <caret line="114" column="0" lean-forward="true" selection-start-line="114" selection-start-column="0" selection-end-line="114" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/comments_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="28" column="3" lean-forward="false" selection-start-line="28" selection-start-column="3" selection-end-line="28" selection-end-column="3" />
-          <folding />
+        <state relative-caret-position="315">
+          <caret line="61" column="80" lean-forward="false" selection-start-line="61" selection-start-column="80" selection-end-line="61" selection-end-column="80" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/comments/_form.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/comments/_comments.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="10" lean-forward="true" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
-          <folding />
+        <state relative-caret-position="44">
+          <caret line="18" column="15" lean-forward="false" selection-start-line="18" selection-start-column="15" selection-end-line="18" selection-end-column="15" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/comments/edit.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="90">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/comments/new.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/comments/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="9" lean-forward="true" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
-          <folding />
+        <state relative-caret-position="479">
+          <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1074,26 +1251,314 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/posts/show.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/comments/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="389">
-          <caret line="115" column="39" lean-forward="true" selection-start-line="115" selection-start-column="39" selection-end-line="115" selection-end-column="39" />
+        <state relative-caret-position="195">
+          <caret line="13" column="9" lean-forward="false" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/comments/index.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/comments/_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="389">
-          <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+        <state relative-caret-position="150">
+          <caret line="10" column="10" lean-forward="false" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/comments/_comments.html.erb">
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="389">
-          <caret line="29" column="3" lean-forward="false" selection-start-line="29" selection-start-column="3" selection-end-line="29" selection-end-column="3" />
+        <state relative-caret-position="1200">
+          <caret line="80" column="0" lean-forward="false" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/posts_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="94" column="7" lean-forward="true" selection-start-line="1" selection-start-column="1" selection-end-line="94" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/admin/application_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/admin/sessions_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/posts/edit.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="50" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/admin/posts/edit.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="10" lean-forward="true" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/categories/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="26" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/admin/categories_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="956">
+          <caret line="72" column="5" lean-forward="false" selection-start-line="72" selection-start-column="5" selection-end-line="72" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/admin/application.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="20" lean-forward="false" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/admin/categories.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/admin/posts.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/users/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/admin/categories/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="37" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="25" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/admin/categories/new.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/admin/posts_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="48" column="5" lean-forward="false" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/users/omniauth_callbacks_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/users/registrations_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/users/passwords_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/authors_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/users/unlocks_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="7" lean-forward="false" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/admin/users/mailer/email_changed.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/admin/users/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/admin/users/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/admin/users/unlocks_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/admin/users_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="371">
+          <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/categories_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="426">
+          <caret line="59" column="38" lean-forward="true" selection-start-line="59" selection-start-column="38" selection-end-line="59" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/posts/new.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/admin/menu.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="11" lean-forward="true" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/posts/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="35" column="68" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="138" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/admin/posts/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/users/shared/_links.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/users/sessions/new.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/users/sessions_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/users/confirmations_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/admin/application.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="27" column="1" lean-forward="true" selection-start-line="27" selection-start-column="1" selection-end-line="41" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="41" column="10" lean-forward="false" selection-start-line="41" selection-start-column="10" selection-end-line="41" selection-end-column="10" />
           <folding />
         </state>
       </provider>

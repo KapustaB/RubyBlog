@@ -44,7 +44,7 @@
                 <a href="#" class="icon fa-heart"></a><%=  post.get_likes.size %>
             <%end%>
           </li>
-          <li><a href="#" class="icon fa-comment"></a></li>
+          <li><a href="#" class="icon fa-comment"><%= post.comments.count %></a></li>
           <li> <%= post.impressionist_count(:filter=>:ip_address)%></li>
         </ul>
       </footer>

@@ -14,18 +14,30 @@
   <% @post.comments.each do |comment| %>
       <tr>
         <td><%= comment.content %></td>
-        <td><p class="text-muted">Added by <strong><%= comment.user.first_name+" "+comment.user.last_name %></strong> on
+        <%if current_user == @post.user %>
+           <td> <p>Author</p></td>
+        <%end%>
+        <td><p class="text-muted">Added by <strong>
+            <%= comment.user.first_name+" "+comment.user.last_name %></strong> on
           <%= l(comment.created_at, format: '%B, %d %Y %H:%M:%S') %></p></td>
-        <td><%= link_to 'Show', comment %></td>
-        <td><%= link_to 'Edit', edit_comment_path(comment) %></td>
-        <td><%= link_to 'Destroy', comment, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-        <td><% %>
+        <% if current_user == comment.user %>
+          <td><%= link_to 'Show', comment %></td>
+          <td><%= link_to 'Edit', edit_comment_path(comment) %></td>
+          <td><%= link_to 'Destroy', comment, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <%end%>
+        <%if user_signed_in? %>
+            <td><% %>
               <p><%= link_to 'Reply', new_comment_path(comment.id),{:post => @post} %></p>
             <% %>
-        </td>
+            </td>
+        <%end%>
       </tr>
   <% end %>
   </tbody>
 </table>
-<%= render 'comments/form', :post => @post%>
+<% if user_signed_in? %>
+  <%= render 'comments/form', :post => @post%>
+<%else%>
+    <strong><p>Login to comment</p></strong>
+<%end%>
 <br>
