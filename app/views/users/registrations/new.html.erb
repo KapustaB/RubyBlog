@@ -5,12 +5,12 @@
 
     <div class="field">
       <%= f.label :first_name %><br/>
-      <%= f.text_field :first_name, autofocus: true %>
+      <%= f.text_field :first_name, autofocus: true, placeholder: "First name", input_html: { class: "form-control", required: true } %>
     </div>
 
     <div class="field">
       <%= f.label :last_name %><br/>
-      <%= f.text_field :last_name, autofocus: true %>
+      <%= f.text_field :last_name, autofocus: true, placeholder: "Last name", input_html: { class: "form-control", required: true } %>
     </div>
 
     <div class="field">
@@ -30,6 +30,10 @@
       <%= f.label :password_confirmation %><br/>
       <%= f.password_field :password_confirmation, autocomplete: "off" %>
     </div>
+
+    <%= flash[:recaptcha_error] %>
+    <div><%=invisible_recaptcha_tags text: 'Submit form' %></div>
+
 
     <div class="actions">
       <%= f.submit "Sign up" %>

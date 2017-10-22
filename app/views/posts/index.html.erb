@@ -11,6 +11,7 @@
     color: gray;
   }
 </style>
+
 <% @posts.first(5).reverse_each do |post| %>
       <article class="post">
       <header>
@@ -22,7 +23,12 @@
         </div>
         <div class="meta">
           <time class="published" datetime="2017-11-01"><%= post.pubDate.strftime("%d.%m.%Y.")%></time>
-          <a href="#" class="author"><%= (post.user.first_name+" "+post.user.last_name)if post.user.present? %><img src="<%= %>" alt=""></a>
+          <a href="#" class="author">
+            <%if post.user.present?%>
+            <%= (post.user.first_name+" "+post.user.last_name)if post.user.present? %>
+                <%else%>
+              Author deleted
+                <%end%><img src="<%= %>" alt=""></a>
         </div>
       </header>
       <a href="#" class="image featured" style="padding: 0; height: 250px; width: 700px"><%=image_tag(post.picture.coverpath.url)%></a>

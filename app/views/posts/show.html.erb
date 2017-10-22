@@ -70,7 +70,12 @@
         </div>
         <div class="meta">
           <time class="published" datetime="2015-11-01">November 1, 2015</time>
-          <a href="#" class="author"><span class="name">Jane Doe</span><img src="images/avatar.jpg" alt="" /></a>
+          <a href="#" class="author"><span class="name"><% if @post.user.present?%>
+                <% @post.user.first_name+" "+@post.user.last_name %>
+            <%else%>
+            Author deleted
+            <%end%>
+          </span><img src="images/avatar.jpg" alt="" /></a>
         </div>
       </header>
       <span class="image featured"><%= image_tag(@post.picture.coverpath.thumb.url) %></span>

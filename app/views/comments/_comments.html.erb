@@ -15,10 +15,14 @@
       <tr>
         <td><%= comment.content %></td>
         <%if current_user == @post.user %>
-           <td> <p>Author</p></td>
+           <td>Author</td>
         <%end%>
-        <td><p class="text-muted">Added by <strong>
-            <%= comment.user.first_name+" "+comment.user.last_name %></strong> on
+        <td><p class="text-muted">Added by </p><strong>
+          <%if comment.user.present?%>
+            <%= comment.user.first_name+" "+comment.user.last_name %>
+              <%else%>
+              Deleted user
+              <%end%></strong> on
           <%= l(comment.created_at, format: '%B, %d %Y %H:%M:%S') %></p></td>
         <% if current_user == comment.user %>
           <td><%= link_to 'Show', comment %></td>

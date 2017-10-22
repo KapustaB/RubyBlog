@@ -1,4 +1,5 @@
 class Admin::PostsController < ApplicationController
+  layout 'admin/application'
   def new
     @page_title = 'Add Post'
     @post = Post.new

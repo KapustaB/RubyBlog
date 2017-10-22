@@ -11,9 +11,12 @@
       <% @posts.each do |post| %>
           <tr>
             <td><%= link_to post.title, post_path(post) %></td>
-            <td><%= post.user.first_name+" "+post.user.last_name%></td>
-            <td>
-            <% post.categories.each do |category|%>
+            <td><% if post.user.present? %>
+                  <%= post.user.first_name+" "+post.user.last_name%></td>
+              <% else %>
+                  <p>User is deleted</p><td>
+              <% end %>
+            <td><% post.categories.each do |category|%>
               <%= category.name+" " %>
             <%end%>
             </td>

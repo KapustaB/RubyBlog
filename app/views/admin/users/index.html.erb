@@ -1,0 +1,31 @@
+<style>
+  .button_to {
+    margin-bottom: 0;
+  }
+</style>
+<h2 class="page-header">Users <%=link_to "Create New", user_registration_path, class:'btn btn-success pull-right' %></h2>
+<% if @users.exists? %>
+    <table class="table table-striped">
+      <tr>
+        <th>Author name</th>
+        <th>Email</th>
+        <th>Number of posts</th>
+        <th>Total likes</th>
+        <th>Edit</th>
+      </tr>
+      <% @users.each do |user| %>
+          <tr>
+            <td><%= user.first_name+" "+user.last_name%></td>
+            <td><%= user.email %></td>
+            <td><%= user.posts.count%></td>
+            <td><%= user.posts.sum(&:cached_votes_up) %> </td>
+            <td><%=link_to "Edit", edit_user_registration_path(user), class:'btn btn-primary' %> |   <%=link_to "Delete", admin_user_path(user), method: :delete, class:'btn btn-danger', data: { confirm: 'Are you sure?' } %></td>
+
+            <td><%= button_to "Add role", admin_user_path(user), inner_html: {style: 'margin-bottom: 0;'} %></td>
+          </tr>
+      <% end %>
+    </table>
+<% else %>
+    <p>There are no posts</p>
+<% end %>
+
