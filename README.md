@@ -22,3 +22,12 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+
+TODO: 
+* Upload user avatar image
+* Sharing posts on facebook
+* Login with facebook
+* Comments design
+* Adming layout on all pages if admin
+* fix recaptcha
