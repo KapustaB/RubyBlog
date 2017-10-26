@@ -20,7 +20,7 @@ class ApplicationController < ActionController::Base
 
   def layout_by_user
     if current_user.present?
-      if current_user.has_role? :admin
+      if current_user.admin?
       "layouts/admin/application"
     else
       "layouts/application"

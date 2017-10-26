@@ -1,0 +1,71 @@
+<style>
+  .close:hover {
+    color: #2ebaae;
+  }
+
+  .modal-dialog{
+    position: relative;
+    display: table; /* This is important */
+    overflow-y: auto;
+    overflow-x: auto;
+    width: auto;
+    min-width: 300px;
+  }
+
+  .button_to {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .face_book{
+    color: white!important;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+
+  .face_book:hover{
+    color: white!important;
+    border-color: black!important;
+  }
+
+  .btn_sign_up {
+    width: 100%;
+  }
+</style>
+<div class="modal fade" id="RegisterModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="top: 10%;">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Sign up<span>
+        <a type="" class="pull-right" data-dismiss="modal" aria-label="Close" style="border: 0!important;">
+          <span aria-hidden="true" class="close">X</span>
+        </a></span></h5>
+      </div>
+      <div class="modal-body">
+        <div class="container">
+       <%= button_to "Sign Up", new_user_registration_path, method: :get, class: 'btn_sign_up' %>
+          <br>
+        <%= button_to user_facebook_omniauth_authorize_path, class: 'face_book btn btn-block btn-social btn-lg btn-facebook',inner_html: {style: 'padding: 5px 5px 5px 5px;'} do %>
+          <span class="fa fa-facebook"></span>Sign in with facebook
+        <% end %>
+        </div>
+         </div>
+
+
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+    $('#RegisterModal').on('show.bs.modal', function () {
+        $(this).find('.modal-body').css({
+            width:'auto', //probably not needed
+            height:'auto', //probably not needed
+            'max-height':'100%'
+        });
+    })
+</script>
