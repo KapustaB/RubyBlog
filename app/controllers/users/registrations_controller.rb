@@ -8,9 +8,14 @@ class Users::RegistrationsController < Devise::RegistrationsController
   # end
 
   # POST /resource
-  # def create
-  #   super
-  # end
+  def create
+    unless check_service_captcha(params["g-recaptcha-response"])
+      flash[:recaptcha_error] = "Označite captcha-u!"
+      return redirect_to :back
+    end
+
+     super
+  end
 
   # GET /resource/edit
   def edit
@@ -36,7 +41,7 @@ class Users::RegistrationsController < Devise::RegistrationsController
   #   super
   # end
 
-  # protected
+  protected
 
   # If you have extra params to permit, append them to the sanitizer.
    def configure_sign_up_params
@@ -57,4 +62,10 @@ class Users::RegistrationsController < Devise::RegistrationsController
   # def after_inactive_sign_up_path_for(resource)
   #   super(resource)
   # end
+
+  private
+
+   def check_service_captcha(recaptcha_param)
+     verify_recaptcha(response: recaptcha_param)
+   end
 end

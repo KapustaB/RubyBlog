@@ -1,20 +1,39 @@
-<h2>Sign up</h2>
+<style>
+  .center-fields-sign{
+    padding-left: 30%;
+    padding-right: 30%;
+  }
 
+  label {
+    margin-bottom: 0;
+    margin-top: 25px;
+  }
+
+  .title-heading{
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+</style>
+<div class="title-heading">
+  <h2>Sign up</h2>
+  <hr>
+</div>
+<div class="center-fields-sign">
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
     <%= devise_error_messages! %>
 
     <div class="field">
-      <%= f.label :first_name %><br/>
+      <%= f.label :first_name %>
       <%= f.text_field :first_name, autofocus: true, placeholder: "First name", input_html: { class: "form-control", required: true } %>
     </div>
 
     <div class="field">
-      <%= f.label :last_name %><br/>
+      <%= f.label :last_name %>
       <%= f.text_field :last_name, autofocus: true, placeholder: "Last name", input_html: { class: "form-control", required: true } %>
     </div>
 
     <div class="field">
-      <%= f.label :email %><br/>
+      <%= f.label :email %>
       <%= f.email_field :email, autofocus: true %>
     </div>
 
@@ -27,17 +46,28 @@
     </div>
 
     <div class="field">
-      <%= f.label :password_confirmation %><br/>
+      <%= f.label :password_confirmation %>
       <%= f.password_field :password_confirmation, autocomplete: "off" %>
     </div>
 
+      <div style="margin-top: 15px;">
     <%= flash[:recaptcha_error] %>
-    <div><%=invisible_recaptcha_tags text: 'Submit form' %></div>
-
+    <div><%= recaptcha_tags callback: 'enableBtn' %></div>
+      </div>
+    <%= link_to "Sign in with Facebook", user_facebook_omniauth_authorize_path %>
 
     <div class="actions">
-      <%= f.submit "Sign up" %>
+      <%= f.submit "Sign up", id: 'sign_up_button' %>
     </div>
 <% end %>
 
 <%= render "users/shared/links" %>
+</div>
+
+<script>
+    document.getElementById("sign_up_button").disabled = true;
+
+    function enableBtn(){
+        document.getElementById("sign_up_button").disabled = false;
+    }
+</script>

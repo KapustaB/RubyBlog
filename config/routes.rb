@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :user_avatars
   get 'new/show'
 
   get 'new/edit'
@@ -7,7 +8,8 @@ Rails.application.routes.draw do
 
   get 'new/index'
 
-  devise_for :users, :controllers => {registrations: 'registrations', sessions: 'users/sessions'}
+  devise_for :users, :controllers => {registrations: 'users/registrations', sessions: 'users/sessions'}
+
 
   namespace :admin do
     resources :categories, :comments, :posts
