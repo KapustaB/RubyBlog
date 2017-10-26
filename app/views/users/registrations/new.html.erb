@@ -49,6 +49,18 @@
       <%= f.password_field :password_confirmation, autocomplete: "off" %>
     </div>
 
+      <div class="field">
+        <%= f.label :AvatarUpload %><br>
+        <%= f.simple_fields_for :avatar do |pic| %>
+            <%= pic.file_field :avatar %>
+        <% end %>
+        <% if f.object.avatar %>
+            <%= image_tag f.object.avatar.thumb.url %>
+            <%= f.label :remove_image %>
+
+        <% end %>
+      </div>
+
       <div style="margin-top: 15px;">
     <%= flash[:recaptcha_error] %>
     <div><%= recaptcha_tags callback: 'enableBtn' %></div>

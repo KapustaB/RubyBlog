@@ -15,6 +15,9 @@ class Users::RegistrationsController < Devise::RegistrationsController
     end
 
      super
+    binding.pry
+    @user.avatar = params[:user][:avatar][:avatar]
+    @user.save
   end
 
   # GET /resource/edit

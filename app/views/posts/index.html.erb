@@ -10,9 +10,10 @@
   .heart_disliked {
     color: gray;
   }
+
 </style>
 
-<% @posts.first(5).reverse_each do |post| %>
+<% @posts.last(5).each do |post| %>
       <article class="post">
       <header>
         <div class="title">
@@ -22,13 +23,13 @@
             <% end %>
         </div>
         <div class="meta">
-          <time class="published" datetime="2017-11-01"><%= post.pubDate.strftime("%d.%m.%Y.")%></time>
+          <time class="published" datetime="2017-11-01"><%= post.pubDate.strftime("%B %d.%Y.")%></time>
           <a href="#" class="author">
             <%if post.user.present?%>
             <%= (post.user.first_name+" "+post.user.last_name)if post.user.present? %>
                 <%else%>
               Author deleted
-                <%end%><img src="<%= %>" alt=""></a>
+            <%end%>  <%=image_tag(post.user.avatar.url)%> </a>
         </div>
       </header>
       <a href="#" class="image featured" style="padding: 0; height: 250px; width: 700px"><%=image_tag(post.picture.coverpath.url)%></a>
