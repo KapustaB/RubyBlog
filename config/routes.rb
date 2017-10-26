@@ -8,7 +8,7 @@ Rails.application.routes.draw do
 
   get 'new/index'
 
-  devise_for :users, :controllers => {registrations: 'users/registrations', sessions: 'users/sessions'}
+  devise_for :users, :controllers => {registrations: 'users/registrations', sessions: 'users/sessions', :omniauth_callbacks => 'users/omniauth_callbacks'}
 
 
   namespace :admin do
