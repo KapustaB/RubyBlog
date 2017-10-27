@@ -1,0 +1,2 @@
+module Users::AboutHelper
+end

@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  namespace :users do
+    get 'about/show' => 'about#show'
+  end
+
   resources :user_avatars
   get 'new/show'
 
@@ -20,6 +24,7 @@ Rails.application.routes.draw do
   resources :pictures
   resources :comments
   resources :search
+
 
   get 'search/search_posts' => 'search#search_post'
 

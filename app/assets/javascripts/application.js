@@ -15,5 +15,6 @@
 //= require jquery
 //= require jquery_ujs
 //= require skel.min.js
+//= require social-share-button
 //= require_tree .
 

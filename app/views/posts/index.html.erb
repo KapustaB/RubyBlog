@@ -11,6 +11,11 @@
     color: gray;
   }
 
+  .author a img {
+    border-radius: 100%;
+    display: block;
+    width: 4em;
+  }
 </style>
 
 <% @posts.last(5).each do |post| %>
@@ -24,12 +29,12 @@
         </div>
         <div class="meta">
           <time class="published" datetime="2017-11-01"><%= post.pubDate.strftime("%B %d.%Y.")%></time>
-          <a href="#" class="author">
+          <%= link_to users_about_show_path(id: post.user.id), class: 'author' do %>
             <%if post.user.present?%>
             <%= (post.user.first_name+" "+post.user.last_name)if post.user.present? %>
                 <%else%>
               Author deleted
-            <%end%>  <%=image_tag(post.user.avatar.url)%> </a>
+            <%end%> <%=image_tag(post.user.avatar.url)%> <% end %>
         </div>
       </header>
       <a href="#" class="image featured" style="padding: 0; height: 250px; width: 700px"><%=image_tag(post.picture.coverpath.url)%></a>
@@ -53,6 +58,7 @@
           </li>
           <li><a href="#" class="icon fa-comment"><%= post.comments.count %></a></li>
           <li> <%= post.impressionist_count(:filter=>:ip_address)%></li>
+          <li><%= social_share_button_tag(post.title, :allow_sites => %w(twitter facebook), :url => post_path(post)) %></li>
         </ul>
       </footer>
       </article>

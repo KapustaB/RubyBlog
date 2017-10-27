@@ -73,13 +73,17 @@ gem 'cancancan', '~> 2.0'
 # Rolify
 gem 'rolify'
 
-# Env
+# Env secret file
 gem 'dotenv-rails', groups: [:development, :test]
 # Capcha
 gem 'recaptcha', require: 'recaptcha/rails'
 
 # Login devise with fb
 gem 'omniauth-facebook', '~> 4.0.0'
+
+# Share on social media
+gem 'social-share-button'
+
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
