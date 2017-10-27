@@ -32,7 +32,7 @@
           <%= link_to users_about_show_path(id: post.user.id), class: 'author' do %>
             <%if post.user.present?%>
             <%= (post.user.first_name+" "+post.user.last_name)if post.user.present? %>
-                <%else%>
+              <%else%>
               Author deleted
             <%end%> <%=image_tag(post.user.avatar.url)%> <% end %>
         </div>

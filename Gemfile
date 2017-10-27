@@ -84,6 +84,8 @@ gem 'omniauth-facebook', '~> 4.0.0'
 # Share on social media
 gem 'social-share-button'
 
+# Text editor
+gem 'ckeditor'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

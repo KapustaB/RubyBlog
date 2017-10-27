@@ -9,12 +9,12 @@
 //
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
-//= require bootstrap
-//= require jquery
-//= require ahoy
 //= require jquery
 //= require jquery_ujs
+//= require bootstrap
+//= require ahoy
 //= require skel.min.js
 //= require social-share-button
+//= require ckeditor/init
 //= require_tree .
 

@@ -1,2 +1,70 @@
-<h1>Users::About#show</h1>
-<p>Find me in app/views/users/about/show.html.erb</p>
+<!-- Wrapper -->
+<div id="wrapper">
+
+  <!-- Menu -->
+  <section id="menu">
+
+    <!-- Search -->
+    <section>
+      <form class="search" method="get" action="#">
+        <input type="text" name="query" placeholder="Search" />
+      </form>
+    </section>
+
+
+    <!-- Actions -->
+    <section>
+      <ul class="actions vertical">
+        <li><a href="#" class="button big fit">Log In</a></li>
+      </ul>
+    </section>
+
+  </section>
+
+  <!-- Main -->
+  <div id="main">
+
+    <!-- Post -->
+    <article class="post">
+      <header>
+        <div class="title">
+          <h2><%= @user.first_name+" "+@user.last_name %></h2>
+
+          Last sing in at: <%= @user.current_sign_in_at.strftime("%m. %d.%Y. %H:%M")%>
+
+        </div>
+        <div class="meta">
+          <time class="published" datetime="2015-11-01"></time>
+          <a href="#" class="author">
+
+           <%=image_tag(@user.avatar.url)%> </a>
+        </div>
+      </header>
+        <%= @user.about.html_safe %>
+      <footer>
+        <ul class="stats">
+          <li> Posts: <%= @user.posts.count%> </li>
+          <li> Likes: <%= @user.posts.sum(&:cached_votes_up) %> </li>
+        </ul>
+      </footer>
+    </article>
+
+  </div>
+
+  <!-- Footer -->
+  <section id="footer">
+    <ul class="icons">
+      <li><a href="#" class="fa-twitter"><span class="label">Twitter</span></a></li>
+      <li><a href="#" class="fa-facebook"><span class="label">Facebook</span></a></li>
+      <li><a href="#" class="fa-instagram"><span class="label">Instagram</span></a></li>
+      <li><a href="#" class="fa-rss"><span class="label">RSS</span></a></li>
+      <li><a href="#" class="fa-envelope"><span class="label">Email</span></a></li>
+    </ul>
+    <p class="copyright">&copy; Untitled. Design: <a href="http://html5up.net">HTML5 UP</a>. Images: <a href="http://unsplash.com">Unsplash</a>.</p>
+  </section>
+</div>
+
+
+
+
+<%= link_to 'Back', :back %>
