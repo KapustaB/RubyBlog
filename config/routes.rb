@@ -17,7 +17,9 @@ Rails.application.routes.draw do
 
   namespace :admin do
     resources :categories, :comments, :posts
-    resources :users
+    resources :users do
+      post :add_role, on: :collection
+    end
   end
 
   resources :categories

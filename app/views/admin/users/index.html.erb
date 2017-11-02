@@ -12,6 +12,7 @@
         <th>Number of posts</th>
         <th>Total likes</th>
         <th>Edit</th>
+        <th>Add moderator function</th>
       </tr>
       <% @users.each do |user| %>
           <tr>
@@ -20,8 +21,12 @@
             <td><%= user.posts.count%></td>
             <td><%= user.posts.sum(&:cached_votes_up) %> </td>
             <td><%=link_to "Edit", edit_user_registration_path(user), class:'btn btn-primary' %> |   <%=link_to "Delete", admin_user_path(user), method: :delete, class:'btn btn-danger', data: { confirm: 'Are you sure?' } %></td>
+          <%= form_for(user,url: add_role_admin_users_path(id: user.id), method: :post) do |f| %>
+                <% f.text_field :id %>
+           <td> <%= f.select :roles, Role.all.pluck(:name), :selected => (user.roles.first.name unless user.roles.empty?), :prompt => "Select role...", :include_blank => user.roles.empty? ? false : "--------" %></td>
+           <td> <%= f.submit "Update user" %></td>
+          <% end %>
 
-            <td><%= button_to "Add role", admin_user_path(user), inner_html: {style: 'margin-bottom: 0;'} %></td>
           </tr>
       <% end %>
     </table>
