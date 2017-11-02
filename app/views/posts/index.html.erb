@@ -17,8 +17,7 @@
     width: 4em;
   }
 </style>
-
-<% @posts.last(5).each do |post| %>
+<% @posts.each do |post| %>
       <article class="post">
       <header>
         <div class="title">
@@ -34,7 +33,11 @@
             <%= (post.user.first_name+" "+post.user.last_name)if post.user.present? %>
               <%else%>
               Author deleted
-            <%end%> <%=image_tag(post.user.avatar.url)%> <% end %>
+            <%end%>
+              <% unless post.user.avatar.blank? %>
+                  <%=image_tag(post.user.avatar.url)%>
+              <% end %>
+          <% end %>
         </div>
       </header>
       <a href="#" class="image featured" style="padding: 0; height: 250px; width: 700px"><%=image_tag(post.picture.coverpath.url)%></a>
@@ -64,11 +67,12 @@
       </article>
   <% end %>
 
-
+<%= paginate @posts, left: 3, right: 3 %>
   <!-- Pagination -->
   <ul class="actions pagination">
-    <li><a href="" class="disabled button big previous">Previous Page</a></li>
-    <li><a href="#" class="button big next">Next Page</a></li>
+    <li><%= link_to_prev_page @posts, 'Previous Page', class:"button big previous"%></li>
+    <!--Ovdje stavit if za disable <li><a href="" class="disabled button big previous">Previous Page</a></li> -->
+    <li><%= link_to_next_page @posts, 'Next Page', class:"button big next"%></li>
   </ul>
 
 </div>
@@ -78,7 +82,7 @@
 
   <!-- Intro -->
   <section id="intro">
-    <a href="#" class="logo"><img src="Future%20Imperfect%20by%20HTML5%20UP_files/logo.jpg" alt=""></a>
+    <a href="#" class="logo"><%= image_tag 'logo.png' %></a>
     <header>
       <h2>Future Imperfect</h2>
       <p>Another fine responsive site template by <a href="http://html5up.net/">HTML5 UP</a></p>
@@ -102,7 +106,9 @@
             <p class="title"> Likes <%= post.get_likes.size %></p>
             </div>
             </div>
-          <a href="#" class="author"><img src="Future%20Imperfect%20by%20HTML5%20UP_files/avatar.jpg" alt=""></a>
+          <a href="#" class="author"> <% unless post.user.avatar.blank? %>
+                <%=image_tag(post.user.avatar.url)%>
+            <% end %></a>
         </header>
         <a href="#" class="image"><%=image_tag(post.picture.coverpath.url)%></a>
       </article>
@@ -122,7 +128,7 @@
                       Reads: <%= most_view_post.impressionist_count(:filter=>:ip_address) %>
                 </time>
               </header>
-              <a href="#" class="image"><img src="Future%20Imperfect%20by%20HTML5%20UP_files/pic08.jpg" alt=""></a>
+              <a href="#" class="image"><%=image_tag(most_view_post.picture.coverpath.url)%></a>
             </article>
           </li>
       <%end%>
@@ -148,4 +154,4 @@
 
       </script></div></section>
 </section>
-<%= render partial: 'footer' %>
+

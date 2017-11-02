@@ -40,7 +40,7 @@
            <%=image_tag(@user.avatar.url)%> </a>
         </div>
       </header>
-        <%= @user.about.html_safe %>
+        <%= @user.about.html_safe unless @user.about.nil? %>
       <footer>
         <ul class="stats">
           <li> Posts: <%= @user.posts.count%> </li>

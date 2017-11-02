@@ -74,16 +74,16 @@
             <%end%>  <%=image_tag(@post.user.avatar.url)%> </a>
         </div>
       </header>
-      <span class="image featured"><%= image_tag(@post.picture.coverpath.thumb.url) %></span>
+      <span class="image featured"><%= image_tag(@post.picture.coverpath.url) %></span>
       <p> <%= %> </p>
       <p> <%= @post.content %></p>
       <footer>
         <ul class="stats">
           <li> <% if user_signed_in? and (current_user != @post.user) %>
-                <% if current_user.liked? post %>
-                    <%= link_to "Dislike", unlike_post_path(@post), method: :put , class: 'icon fa-heart heart_liked', id: "Post#{post.id}" , :remote => true, onclick: "heart_like(#{post.id})"%>
+                <% if current_user.liked? @post %>
+                    <%= link_to "Dislike", unlike_post_path(@post), method: :put , class: 'icon fa-heart heart_liked', id: "Post#{@post.id}" , :remote => true, onclick: "heart_like(#{@post.id})"%>
                 <% else %>
-                    <%= link_to "Like", like_post_path(@post), method: :put , class: 'icon fa-heart', id: "Post#{post.id}" , :remote => true, onclick: "heart_like(#{post.id})"%>
+                    <%= link_to "Like", like_post_path(@post), method: :put , class: 'icon fa-heart', id: "Post#{@post.id}" , :remote => true, onclick: "heart_like(#{@post.id})"%>
                 <%end%>
                 <%=  @post.get_likes.size %>
 
