@@ -71,7 +71,7 @@
                 <%= (@post.user.first_name+" "+@post.user.last_name)if @post.user.present? %>
             <%else%>
                 Author deleted
-            <%end%>  <%=image_tag(@post.user.avatar.url)%> </a>
+            <%end%>  <%=image_tag(@post.user.avatar.url) unless @post.user.avatar.blank? %> </a>
         </div>
       </header>
       <span class="image featured"><%= image_tag(@post.picture.coverpath.url) %></span>

@@ -17,7 +17,7 @@
     width: 4em;
   }
 </style>
-<% @posts.each do |post| %>
+<% @postsPag.each do |post| %>
       <article class="post">
       <header>
         <div class="title">
@@ -50,11 +50,12 @@
         <ul class="stats">
           <li>  <% if user_signed_in? and (current_user != post.user) %>
                     <% if current_user.liked? post %>
+
                        <%= link_to "Dislike", unlike_post_path(post), method: :put , class: 'icon fa-heart heart_liked', id: "Post#{post.id}" , :remote => true, onclick: "heart_like(#{post.id})"%>
                     <% else %>
                        <%= link_to "Like", like_post_path(post), method: :put , class: 'icon fa-heart', id: "Post#{post.id}" , :remote => true, onclick: "heart_like(#{post.id})"%>
                     <%end%>
-                <%=  post.get_likes.size %>
+                <span id="Likes<%= post.id %>"><%=  post.get_likes.size %></span>
             <% else %>
                 <a href="#" class="icon fa-heart"></a><%=  post.get_likes.size %>
             <%end%>
@@ -67,12 +68,12 @@
       </article>
   <% end %>
 
-<%= paginate @posts, left: 3, right: 3 %>
+<%= paginate @postsPag, left: 3, right: 3 %>
   <!-- Pagination -->
   <ul class="actions pagination">
-    <li><%= link_to_prev_page @posts, 'Previous Page', class:"button big previous"%></li>
-    <!--Ovdje stavit if za disable <li><a href="" class="disabled button big previous">Previous Page</a></li> -->
-    <li><%= link_to_next_page @posts, 'Next Page', class:"button big next"%></li>
+    <li><%= link_to_prev_page @postsPag, 'Previous Page', class:"button big previous"%></li>
+    <li><% @postsPag.page %></li>
+    <li><%= link_to_next_page @postsPag, 'Next Page', class:"button big next"%></li>
   </ul>
 
 </div>
@@ -93,7 +94,8 @@
   <section>
     <div class="mini-posts">
 
-      <% @posts.order(cached_votes_up: :desc).first(3).each do |post| %>
+      <% @most_liked_posts.each do |post| %>
+
       <!-- Mini Post -->
       <article class="mini-post">
         <header>
@@ -114,7 +116,7 @@
       </article>
     <% end %>
 
-     <% @most_view_posts = @posts.order('impressions_count DESC').take(3) %>
+
   <!-- Posts List -->
 
   <section>
@@ -139,15 +141,20 @@
           function heart_like(e){
 
               var like = document.getElementById("Post"+e);
+              var likes_count = document.getElementById("Likes"+e);
 
               if(like.classList.contains("heart_liked")) {
                   like.classList.remove("heart_liked");
-                  like.setAttribute('href',"/posts/" + e + "/like");
+                  like.setAttribute('href',"/posts/" + e + "/unlike");
                   like.innerHTML = "Like";
+                  likes_count.innerHTML =  parseInt(likes_count.innerHTML)-1;
+
               }else{
                   like.classList.add("heart_liked");
-                  like.setAttribute('href',"/posts/" + e + "/unlike");
+                  like.setAttribute('href',"/posts/" + e + "/like");
                   like.innerHTML = "Dislike";
+                  likes_count.innerHTML = parseInt(likes_count.innerHTML)+1;
+                  //alert(likes_count);
               }
           }
 

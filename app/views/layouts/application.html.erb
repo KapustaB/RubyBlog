@@ -29,13 +29,15 @@
       <ul>
         <% if user_signed_in? %>
             <li><%= link_to('Logout', destroy_user_session_path(id: current_user.id), method: :delete) %> </li>
+            <li><%= link_to "My bio", users_about_show_path(id: current_user.id)%></li>
         <% else %>
             <li><a data-toggle="modal" data-target="#RegisterModal" class="set_pointer">Register</a></li>
             <li><%= link_to "Sign in", new_user_session_path  %></li>
         <% end %>
-        <% if user_signed_in? %>
+        <% if user_signed_in? and current_user.has_role? :moderator or :admin %>
             <li><%= link_to "New post", new_post_path %></li>
             <li><%= link_to "New category", new_category_path %></li>
+
         <% end %>
 
       </ul>

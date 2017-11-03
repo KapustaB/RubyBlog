@@ -1,10 +1,13 @@
 class PostsController < ApplicationController
   before_action :set_post, only: [:show, :edit, :update, :destroy, :upvote, :downvote]
+  before_action :set_posts, only: [:index]
+  before_action :get_most_viewed_sidebar_posts, only: [:index, :show]
+  before_action :get_most_liked_sidebar_posts, only: [:index, :show]
 
   # GET /posts
   # GET /posts.json
   def index
-    @posts = Post.page(params[:page]).per(5)
+    @postsPag = @posts.order(created_at: :desc).page(params[:page])
   end
 
   # GET /posts/1
@@ -38,12 +41,12 @@ class PostsController < ApplicationController
     respond_to do |format|
       if @post.save!
         flash[:notice] = "Kreiran je novi post!"
-        format.html { redirect_to @post, notice: 'Post was successfully created.' }
-        format.json { render :show, status: :created, location: @post }
+        format.html {redirect_to @post, notice: 'Post was successfully created.'}
+        format.json {render :show, status: :created, location: @post}
       else
         flash[:notice] = "Post nije kreiran!"
-        format.html { render :new , notice: 'Post cannot be created' }
-        format.json { render json: @post.errors, status: :unprocessable_entity }
+        format.html {render :new, notice: 'Post cannot be created'}
+        format.json {render json: @post.errors, status: :unprocessable_entity}
       end
     end
   end
@@ -54,11 +57,11 @@ class PostsController < ApplicationController
 
     respond_to do |format|
       if @post.update(post_params)
-        format.html { redirect_to @post, notice: 'Post was successfully updated.' }
-        format.json { render :show, status: :ok, location: @post }
+        format.html {redirect_to @post, notice: 'Post was successfully updated.'}
+        format.json {render :show, status: :ok, location: @post}
       else
-        format.html { render :edit }
-        format.json { render json: @post.errors, status: :unprocessable_entity }
+        format.html {render :edit}
+        format.json {render json: @post.errors, status: :unprocessable_entity}
       end
     end
   end
@@ -68,8 +71,8 @@ class PostsController < ApplicationController
   def destroy
     @post.destroy
     respond_to do |format|
-      format.html { redirect_to posts_url, notice: 'Post was successfully destroyed.' }
-      format.json { head :no_content }
+      format.html {redirect_to posts_url, notice: 'Post was successfully destroyed.'}
+      format.json {head :no_content}
     end
   end
 
@@ -83,16 +86,26 @@ class PostsController < ApplicationController
     @post.downvote_from current_user
   end
 
-
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_post
-      @post = Post.find(params[:id])
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_post
+    @post = Post.find(params[:id])
+  end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def post_params
-      params.require(:post).permit(:title, :content, :description, :pubDate, {:category_ids => []} )
-    end
+  def set_posts
+    @posts = Post.all
+  end
+
+  def get_most_viewed_sidebar_posts
+    @most_view_posts = PostsByWeek.new(3).get_most_viewed_posts
+  end
+
+  def get_most_liked_sidebar_posts
+    @most_liked_posts = PostsByWeek.new(3).get_most_liked_posts
+  end
+  # Never trust parameters from the scary internet, only allow the white list through.
+  def post_params
+    params.require(:post).permit(:title, :content, :description, :pubDate, {:category_ids => []})
+  end
 
 end
