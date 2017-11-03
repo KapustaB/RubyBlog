@@ -1,7 +1,20 @@
+<style>
+  .center-fields-sign{
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+
+  label {
+    margin-bottom: 0;
+    margin-top: 25px;
+  }
+
+</style>
+
 <h1>New Post</h1>
 
 
-
+<div class="center-fields-sign">
 <%= simple_form_for @post, html: {multipart: true} do |f| %>
 
     <div class="field">
@@ -9,11 +22,11 @@
     </div>
 
     <div class="field">
-      <%= f.input :description, autofocus: true %>
+      <%= f.input :description,as: :text ,autofocus: true %>
     </div>
 
-    <div class="field">
-      <%= f.input :content, autofocus: true %>
+    <div class="field" style = "margin-top: 25px; margin-bottom: 25px">
+      <%= f.cktext_area :content, autofocus: true %>
     </div>
 
     <div class="field">
@@ -35,7 +48,7 @@
         <%= f.button :submit %>
       </div>
 <% end %>
-
+</div>
 
 
 <%= link_to 'Back', posts_path %>

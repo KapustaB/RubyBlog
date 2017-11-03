@@ -35,7 +35,7 @@
         </div>
         <div class="meta" style="padding: 15px;">
           <time class="published" datetime="2015-11-01"></time>
-                <%=image_tag(@user.avatar.url, style: "vertical-align: middle") unless @user.avatar.blank? %>
+                <%=image_tag(@user.avatar.url, style: "vertical-align: middle; height:150px") unless @user.avatar.blank? %>
         </div>
       </header>
         <%= @user.about.html_safe unless @user.about.nil? %>
@@ -55,5 +55,5 @@
 
 
 
-
+<%= link_to 'Edit', edit_user_registration_path %>
 <%= link_to 'Back', :back %>

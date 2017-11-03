@@ -28,16 +28,14 @@
         </div>
         <div class="meta">
           <time class="published" datetime="2017-11-01"><%= post.pubDate.strftime("%B %d.%Y.")%></time>
-          <%= link_to users_about_show_path(id: post.user.id), class: 'author' do %>
-            <%if post.user.present?%>
-            <%= (post.user.first_name+" "+post.user.last_name)if post.user.present? %>
-              <%else%>
-              Author deleted
-            <%end%>
-              <% unless post.user.avatar.blank? %>
-                  <%=image_tag(post.user.avatar.url)%>
-              <% end %>
-          <% end %>
+          <%if post.user.present?%>
+            <%= link_to users_about_show_path(id: post.user.id), class: 'author' do %>
+            <%= (post.user.first_name+" "+post.user.last_name)%>
+                  <%=image_tag(post.user.avatar.url) unless post.user.avatar.blank?  %>
+              <%end%>
+          <% else %>
+          Author deleted
+              <%end%>
         </div>
       </header>
       <a href="#" class="image featured" style="padding: 0; height: 250px; width: 700px"><%=image_tag(post.picture.coverpath.url)%></a>
@@ -91,7 +89,9 @@
   </section>
 
   <!-- Mini Posts -->
+
   <section>
+    <h3 style="margin-top: 0%; margin-bottom: 10%">Most liked posts</h3>
     <div class="mini-posts">
 
       <% @most_liked_posts.each do |post| %>
@@ -108,9 +108,11 @@
             <p class="title"> Likes <%= post.get_likes.size %></p>
             </div>
             </div>
-          <a href="#" class="author"> <% unless post.user.avatar.blank? %>
-                <%=image_tag(post.user.avatar.url)%>
-            <% end %></a>
+          <a href="#" class="author">
+            <%if post.user.present? and !post.user.avatar.blank? %>
+              <%=image_tag(post.user.avatar.url)%>
+            <%end%>
+            </a>
         </header>
         <a href="#" class="image"><%=image_tag(post.picture.coverpath.url)%></a>
       </article>
@@ -118,7 +120,7 @@
 
 
   <!-- Posts List -->
-
+  <h3 style="margin-top: 20%; margin-bottom: 10%">Most viewed posts</h3>
   <section>
     <ul class="posts">
       <% @most_view_posts.each do |most_view_post| %>

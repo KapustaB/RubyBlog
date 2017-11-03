@@ -97,7 +97,7 @@ class PostsController < ApplicationController
   end
 
   def get_most_viewed_sidebar_posts
-    @most_view_posts = PostsByWeek.new(3).get_most_viewed_posts
+    @most_view_posts = PostsByWeek.new(5).get_most_viewed_posts
   end
 
   def get_most_liked_sidebar_posts

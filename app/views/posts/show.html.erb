@@ -76,7 +76,7 @@
       </header>
       <span class="image featured"><%= image_tag(@post.picture.coverpath.url) %></span>
       <p> <%= %> </p>
-      <p> <%= @post.content %></p>
+      <p> <%= @post.content.html_safe %></p>
       <footer>
         <ul class="stats">
           <li> <% if user_signed_in? and (current_user != @post.user) %>
