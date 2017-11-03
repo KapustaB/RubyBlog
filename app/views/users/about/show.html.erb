@@ -1,5 +1,5 @@
 <!-- Wrapper -->
-<div id="wrapper">
+<div id="wrapper" style="padding-left: 170px; padding-right: 170px;">
 
   <!-- Menu -->
   <section id="menu">
@@ -33,12 +33,9 @@
           Last sing in at: <%= @user.current_sign_in_at.strftime("%m. %d.%Y. %H:%M")%>
 
         </div>
-        <div class="meta">
+        <div class="meta" style="padding: 15px;">
           <time class="published" datetime="2015-11-01"></time>
-          <a href="#" class="author">
-            <% unless @user.avatar.blank? %>
-                <%=image_tag(@user.avatar.url)%> </a>
-            <% end %>
+                <%=image_tag(@user.avatar.url, style: "vertical-align: middle") unless @user.avatar.blank? %>
         </div>
       </header>
         <%= @user.about.html_safe unless @user.about.nil? %>
@@ -53,16 +50,7 @@
   </div>
 
   <!-- Footer -->
-  <section id="footer">
-    <ul class="icons">
-      <li><a href="#" class="fa-twitter"><span class="label">Twitter</span></a></li>
-      <li><a href="#" class="fa-facebook"><span class="label">Facebook</span></a></li>
-      <li><a href="#" class="fa-instagram"><span class="label">Instagram</span></a></li>
-      <li><a href="#" class="fa-rss"><span class="label">RSS</span></a></li>
-      <li><a href="#" class="fa-envelope"><span class="label">Email</span></a></li>
-    </ul>
-    <p class="copyright">&copy; Untitled. Design: <a href="http://html5up.net">HTML5 UP</a>. Images: <a href="http://unsplash.com">Unsplash</a>.</p>
-  </section>
+
 </div>
 
 

@@ -44,28 +44,15 @@
       <div class="modal-body">
         <div class="container">
        <%= button_to "Sign Up", new_user_registration_path, method: :get, class: 'btn_sign_up' %>
-          <br>
+          <hr>
         <%= button_to user_facebook_omniauth_authorize_path, class: 'face_book btn btn-block btn-social btn-lg btn-facebook',inner_html: {style: 'padding: 5px 5px 5px 5px;'} do %>
           <span class="fa fa-facebook"></span>Sign in with facebook
         <% end %>
         </div>
          </div>
-
-
-
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
       </div>
     </div>
   </div>
 </div>
-
-<script>
-    $('#RegisterModal').on('show.bs.modal', function () {
-        $(this).find('.modal-body').css({
-            width:'auto', //probably not needed
-            height:'auto', //probably not needed
-            'max-height':'100%'
-        });
-    })
-</script>

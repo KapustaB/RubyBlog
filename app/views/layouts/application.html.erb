@@ -34,7 +34,7 @@
             <li><a data-toggle="modal" data-target="#RegisterModal" class="set_pointer">Register</a></li>
             <li><%= link_to "Sign in", new_user_session_path  %></li>
         <% end %>
-        <% if user_signed_in? and current_user.has_role? :moderator or :admin %>
+        <% if user_signed_in? && (current_user.has_role? :moderator or current_user.has_role? :admin) %>
             <li><%= link_to "New post", new_post_path %></li>
             <li><%= link_to "New category", new_category_path %></li>
 
@@ -128,3 +128,13 @@
   </section>
 
 </section></div></body></html>
+
+<script>
+    $('#RegisterModal').on('show.bs.modal', function () {
+        $(this).find('.modal-body').css({
+            width:'auto', //probably not needed
+            height:'auto', //probably not needed
+            'max-height':'100%'
+        });
+    })
+</script>
