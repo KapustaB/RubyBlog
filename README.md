@@ -1,33 +1,35 @@
-# README
+# RubyBlog
+___
+One Paragraph of project description goes here
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Getting Started
+___
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
-Things you may want to cover:
+### Prerequisites
+___
+What things you need to install the software and how to install them
 
-* Ruby version
+```Give examples```
 
-* System dependencies
+### Installing
+___
+A step by step series of examples that tell you have to get a development env running
 
-* Configuration
+Say what the step will be
 
-* Database creation
+`Give the example`
 
-* Database initialization
+And repeat
 
-* How to run the test suite
+`until finished`
 
-* Services (job queues, cache servers, search engines, etc.)
+End with an example of getting some data out of the system or using it for a little demo.
 
-* Deployment instructions
-
-* ...
-
-
-TODO: 
-* Upload user avatar image
-* Sharing posts on facebook
-* Login with facebook
-* Comments design
-* Adming layout on all pages if admin
-* fix recaptcha
+### TODO
+___
+1. Redesign comments
+2. Fix ratio of uploaded images
+3. Add Posts to About user
+4. Add Contact to About user
+5. Update Readme file
